@@ -1148,9 +1148,25 @@ public final class Doomsday {
             case S11_SCAN -> target(player, MarvelSites.NEW_YORK, n(DoomsdaySites.ALLEY_PAVEMENT), 2);
             case S11_ACCIDENT -> {
                 checkpoint(player, MarvelSites.NEW_YORK, n(DoomsdaySites.PAVEMENT_SAFE));
-                target(player, MarvelSites.NEW_YORK, n(DoomsdaySites.ACCIDENT), 6);
+                boolean carReady = DoomsdaySites.allWebbed(ny, DoomsdaySites.CAR_ANCHORS);
+                boolean roadReady = DoomsdaySites.allWebbed(ny, DoomsdaySites.BARRIER_POSTS);
+                // Point at the next meaningful interaction, not at an unchanging crash marker.
+                BlockPos next = !carReady ? DoomsdaySites.ACCIDENT
+                        : !state(player, "occupant_safe_0") || !state(player, "occupant_safe_1")
+                        ? DoomsdaySites.OCCUPANTS.get(!state(player, "occupant_safe_0") ? 0 : 1)
+                        : !roadReady ? DoomsdaySites.BARRIER_POSTS.get(0) : DoomsdaySites.PAVEMENT_SAFE;
+                target(player, MarvelSites.NEW_YORK, n(next), 6);
                 if (player.position().distanceTo(Vec3.atBottomCenterOf(n(DoomsdaySites.ACCIDENT))) < 40) {
                     accident(player, ny);
+                    // Simple in-game guidance until the final cinematic rescue HUD is implemented.
+                    if (player.tickCount % 200 < 100) {
+                        String hint = !carReady ? "Web the crashed car with your Web Shooters"
+                                : !state(player, "occupant_safe_0") || !state(player, "occupant_safe_1")
+                                ? "Right-click both passengers and escort them to safety"
+                                : !roadReady ? "Web the two roadside barrier anchors"
+                                : "Keep the road clear while everyone reaches safety";
+                        player.displayClientMessage(Component.literal(hint), true);
+                    }
                 }
             }
             case S11_SKY -> {
