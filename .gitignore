@@ -25,3 +25,6 @@
 # Operating-system metadata
 Thumbs.db
 Desktop.ini
+
+# Python bytecode from the asset tools
+__pycache__/
