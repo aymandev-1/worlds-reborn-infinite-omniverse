@@ -1,0 +1,6 @@
+{
+  "message.wrtravel.no_free_travel": "You can't travel from the map yet. Keep following the story.",
+  "message.wrtravel.locked": "%s is locked.",
+  "message.wrtravel.already_here": "You are already there.",
+  "message.wrtravel.missing_dimension": "Worlds Reborn: destination dimension %s is missing. Check that every Worlds Reborn mod is installed."
+}

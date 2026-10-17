@@ -1,0 +1,25 @@
+# IntelliJ IDEA project files
+.idea/
+
+# Gradle caches and generated build output
+.gradle/
+**/build/
+
+# NeoForge development runtime data
+**/run/
+
+# Local logs and generated diagnostic output
+*.log
+*.log.*
+*-log.txt
+*-err.txt
+*.out
+*.err
+
+# Generated archives and packaged mod outputs
+*.jar
+*.zip
+
+# Operating-system metadata
+Thumbs.db
+Desktop.ini

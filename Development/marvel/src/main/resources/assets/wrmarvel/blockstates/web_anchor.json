@@ -1,0 +1,10 @@
+{
+ "variants": {
+  "webbed=false": {
+   "model": "wrmarvel:block/web_anchor"
+  },
+  "webbed=true": {
+   "model": "wrmarvel:block/web_anchor_webbed"
+  }
+ }
+}

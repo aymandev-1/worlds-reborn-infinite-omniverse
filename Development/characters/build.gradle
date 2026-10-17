@@ -1,0 +1,9 @@
+dependencies {
+    api project(':core')
+}
+
+neoForge {
+    mods {
+        "wrcharacters" { sourceSet sourceSets.main }
+    }
+}

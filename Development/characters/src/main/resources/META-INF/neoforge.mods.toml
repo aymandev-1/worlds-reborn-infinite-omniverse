@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="wrcharacters"
+version="${mod_version}"
+displayName="Worlds Reborn: Characters"
+authors="${mod_authors}"
+description='''Story NPCs, character definitions, skins, behaviour and hostile humanoids.'''
+
+[[dependencies.wrcharacters]]
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wrcharacters]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wrcharacters]]
+modId="wrcore"
+type="required"
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"

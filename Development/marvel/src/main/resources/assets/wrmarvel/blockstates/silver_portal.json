@@ -1,0 +1,79 @@
+{
+ "variants": {
+  "tile_x=0,tile_y=0": {
+   "model": "wrmarvel:block/silver_portal_0_0"
+  },
+  "tile_x=0,tile_y=1": {
+   "model": "wrmarvel:block/silver_portal_0_1"
+  },
+  "tile_x=0,tile_y=2": {
+   "model": "wrmarvel:block/silver_portal_0_2"
+  },
+  "tile_x=0,tile_y=3": {
+   "model": "wrmarvel:block/silver_portal_0_3"
+  },
+  "tile_x=0,tile_y=4": {
+   "model": "wrmarvel:block/silver_portal_0_4"
+  },
+  "tile_x=1,tile_y=0": {
+   "model": "wrmarvel:block/silver_portal_1_0"
+  },
+  "tile_x=1,tile_y=1": {
+   "model": "wrmarvel:block/silver_portal_1_1"
+  },
+  "tile_x=1,tile_y=2": {
+   "model": "wrmarvel:block/silver_portal_1_2"
+  },
+  "tile_x=1,tile_y=3": {
+   "model": "wrmarvel:block/silver_portal_1_3"
+  },
+  "tile_x=1,tile_y=4": {
+   "model": "wrmarvel:block/silver_portal_1_4"
+  },
+  "tile_x=2,tile_y=0": {
+   "model": "wrmarvel:block/silver_portal_2_0"
+  },
+  "tile_x=2,tile_y=1": {
+   "model": "wrmarvel:block/silver_portal_2_1"
+  },
+  "tile_x=2,tile_y=2": {
+   "model": "wrmarvel:block/silver_portal_2_2"
+  },
+  "tile_x=2,tile_y=3": {
+   "model": "wrmarvel:block/silver_portal_2_3"
+  },
+  "tile_x=2,tile_y=4": {
+   "model": "wrmarvel:block/silver_portal_2_4"
+  },
+  "tile_x=3,tile_y=0": {
+   "model": "wrmarvel:block/silver_portal_3_0"
+  },
+  "tile_x=3,tile_y=1": {
+   "model": "wrmarvel:block/silver_portal_3_1"
+  },
+  "tile_x=3,tile_y=2": {
+   "model": "wrmarvel:block/silver_portal_3_2"
+  },
+  "tile_x=3,tile_y=3": {
+   "model": "wrmarvel:block/silver_portal_3_3"
+  },
+  "tile_x=3,tile_y=4": {
+   "model": "wrmarvel:block/silver_portal_3_4"
+  },
+  "tile_x=4,tile_y=0": {
+   "model": "wrmarvel:block/silver_portal_4_0"
+  },
+  "tile_x=4,tile_y=1": {
+   "model": "wrmarvel:block/silver_portal_4_1"
+  },
+  "tile_x=4,tile_y=2": {
+   "model": "wrmarvel:block/silver_portal_4_2"
+  },
+  "tile_x=4,tile_y=3": {
+   "model": "wrmarvel:block/silver_portal_4_3"
+  },
+  "tile_x=4,tile_y=4": {
+   "model": "wrmarvel:block/silver_portal_4_4"
+  }
+ }
+}

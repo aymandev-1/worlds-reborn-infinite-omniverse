@@ -1,0 +1,6 @@
+{
+  "entity.wrcharacters.story_npc": "Story Character",
+  "entity.wrcharacters.story_villager": "Story Villager",
+  "entity.wrcharacters.hostile_npc": "Hostile Character",
+  "prompt.wrcharacters.talk": "Talk to %s"
+}

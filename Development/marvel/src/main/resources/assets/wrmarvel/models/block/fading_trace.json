@@ -1,0 +1,9 @@
+{
+  "render_type": "minecraft:translucent",
+  "ambientocclusion": false,
+  "textures": { "particle": "wrmarvel:block/fading_trace", "trace": "wrmarvel:block/fading_trace" },
+  "elements": [
+    { "from": [0, 0.1, 0], "to": [16, 0.2, 16], "shade": false,
+      "faces": { "up": { "uv": [0, 0, 16, 16], "texture": "#trace" }, "down": { "uv": [0, 0, 16, 16], "texture": "#trace" } } }
+  ]
+}

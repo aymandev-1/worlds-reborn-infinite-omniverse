@@ -1,0 +1,5 @@
+neoForge {
+    mods {
+        wrcore { sourceSet sourceSets.main }
+    }
+}

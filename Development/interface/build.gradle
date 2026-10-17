@@ -1,0 +1,9 @@
+dependencies {
+    api project(':core')
+}
+
+neoForge {
+    mods {
+        "wrinterface" { sourceSet sourceSets.main }
+    }
+}

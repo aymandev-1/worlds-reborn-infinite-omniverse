@@ -1,0 +1,8 @@
+{
+  "key.categories.worldsreborn": "Worlds Reborn",
+  "key.wrabilities.slot1": "Ability Slot 1",
+  "key.wrabilities.slot2": "Ability Slot 2",
+  "key.wrabilities.slot3": "Ability Slot 3",
+  "ability.wrabilities.dev_pulse": "Dev Pulse",
+  "ability.wrabilities.dev_pulse.desc": "Developer test ability. Pushes nearby mobs away. Not part of the story."
+}

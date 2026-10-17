@@ -1,0 +1,44 @@
+// Worlds Reborn: Marvel — the first campaign. Also hosts the dev run configs that load every module.
+dependencies {
+    api project(':core')
+    api project(':interface')
+    api project(':story')
+    api project(':characters')
+    api project(':abilities')
+    api project(':worlds')
+    api project(':travel')
+}
+
+neoForge {
+    runs {
+        client {
+            client()
+            gameDirectory = rootProject.file('run/client')
+        }
+        server {
+            server()
+            programArgument '--nogui'
+            gameDirectory = rootProject.file('run/server')
+        }
+    }
+
+    mods {
+        wrcore       { sourceSet project(':core').sourceSets.main }
+        wrinterface  { sourceSet project(':interface').sourceSets.main }
+        wrstory      { sourceSet project(':story').sourceSets.main }
+        wrcharacters { sourceSet project(':characters').sourceSets.main }
+        wrabilities  { sourceSet project(':abilities').sourceSets.main }
+        wrworlds     { sourceSet project(':worlds').sourceSets.main }
+        wrtravel     { sourceSet project(':travel').sourceSets.main }
+        wrmarvel     { sourceSet sourceSets.main }
+    }
+}
+
+// Collects every module jar into build/release for easy installation.
+tasks.register('collectJars', Copy) {
+    group = 'worldsreborn'
+    description = 'Copies all eight Worlds Reborn mod jars into build/release'
+    dependsOn rootProject.subprojects.collect { it.tasks.named('jar') }
+    from(rootProject.subprojects.collect { it.tasks.named('jar') })
+    into rootProject.layout.buildDirectory.dir('release')
+}

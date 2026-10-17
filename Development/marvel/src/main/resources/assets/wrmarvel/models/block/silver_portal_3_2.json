@@ -1,0 +1,48 @@
+{
+ "render_type": "minecraft:translucent",
+ "ambientocclusion": false,
+ "textures": {
+  "particle": "wrmarvel:block/silver_portal",
+  "portal": "wrmarvel:block/silver_portal"
+ },
+ "elements": [
+  {
+   "from": [
+    0,
+    0,
+    7.5
+   ],
+   "to": [
+    16,
+    16,
+    8.5
+   ],
+   "shade": false,
+   "neoforge_data": {
+    "block_light": 15,
+    "sky_light": 15,
+    "ambient_occlusion": false
+   },
+   "faces": {
+    "south": {
+     "uv": [
+      9.600000000000001,
+      6.4,
+      12.8,
+      9.600000000000001
+     ],
+     "texture": "#portal"
+    },
+    "north": {
+     "uv": [
+      3.2,
+      6.4,
+      6.4,
+      9.600000000000001
+     ],
+     "texture": "#portal"
+    }
+   }
+  }
+ ]
+}

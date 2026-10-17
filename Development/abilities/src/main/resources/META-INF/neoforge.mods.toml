@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="wrabilities"
+version="${mod_version}"
+displayName="Worlds Reborn: Abilities"
+authors="${mod_authors}"
+description='''Ability unlocks, equipped slots, cooldowns and server-validated activation.'''
+
+[[dependencies.wrabilities]]
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wrabilities]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wrabilities]]
+modId="wrcore"
+type="required"
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"

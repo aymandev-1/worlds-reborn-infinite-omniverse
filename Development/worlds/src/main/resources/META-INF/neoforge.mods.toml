@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="wrworlds"
+version="${mod_version}"
+displayName="Worlds Reborn: Worlds"
+authors="${mod_authors}"
+description='''Set-piece builder, persistent world sites and safe placement helpers for dimensions, cities and structures.'''
+
+[[dependencies.wrworlds]]
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wrworlds]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wrworlds]]
+modId="wrcore"
+type="required"
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"

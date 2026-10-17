@@ -1,0 +1,31 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="wrstory"
+version="${mod_version}"
+displayName="Worlds Reborn: Story"
+authors="${mod_authors}"
+description='''Quests, objectives, dialogue sessions, cinematic sessions and campaign progression with safe recovery.'''
+
+[[dependencies.wrstory]]
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wrstory]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wrstory]]
+modId="wrcore"
+type="required"
+versionRange="[0.1.0,)"
+ordering="AFTER"
+side="BOTH"

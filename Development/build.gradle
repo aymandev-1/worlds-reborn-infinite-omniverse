@@ -1,0 +1,60 @@
+// Worlds Reborn — shared build logic for every module.
+plugins {
+    id 'net.neoforged.moddev' version '2.0.148' apply false
+}
+
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'net.neoforged.moddev'
+
+    version = mod_version
+    group = mod_group_id
+
+    java {
+        toolchain.languageVersion = JavaLanguageVersion.of(21)
+        withSourcesJar()
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    base {
+        archivesName = "worldsreborn-${project.name}-${minecraft_version}"
+    }
+
+    neoForge {
+        version = project.neo_version
+        validateAccessTransformers = false
+    }
+
+    dependencies {
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+        testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+        options.release = 21
+    }
+
+    tasks.named('test') {
+        useJUnitPlatform()
+    }
+
+    // Expand ${...} placeholders in neoforge.mods.toml
+    tasks.named('processResources', ProcessResources) {
+        def props = [
+            mod_version          : mod_version,
+            minecraft_version_range: minecraft_version_range,
+            neo_version_range    : neo_version_range,
+            loader_version_range : loader_version_range,
+            mod_authors          : mod_authors,
+            mod_license          : mod_license,
+        ]
+        inputs.properties props
+        filesMatching('META-INF/neoforge.mods.toml') {
+            expand props
+        }
+    }
+}

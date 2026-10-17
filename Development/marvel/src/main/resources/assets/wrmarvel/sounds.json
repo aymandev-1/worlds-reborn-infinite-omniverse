@@ -1,0 +1,1502 @@
+{
+  "voice.traveller.and_it_starts": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.voice.traveller",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/traveller_and_it_starts",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_001": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_001",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_001",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_002": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_002",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_002",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_003": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_003",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_003",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_004": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_004",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_004",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_005": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_005",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_005",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_006": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_006",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_006",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_007": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_007",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_007",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_008": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_008",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_008",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_009": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_009",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_009",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_010": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_010",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_010",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_011": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_011",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_011",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_012": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_012",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_012",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_013": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_013",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_013",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_014": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_014",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_014",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_015": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_015",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_015",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_016": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_016",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_016",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_017": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_017",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_017",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_018": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_018",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_018",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_019": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_019",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_019",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_020": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_020",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_020",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_021": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_021",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_021",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_022": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_022",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_022",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_023": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_023",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_023",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_024": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_024",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_024",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_025": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_025",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_025",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s001_026": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s001_026",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s001_026",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_001": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_001",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_001",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_002": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_002",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_002",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_003": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_003",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_003",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_004": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_004",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_004",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_005": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_005",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_005",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_006": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_006",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_006",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_007": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_007",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_007",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_008": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_008",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_008",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_009": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_009",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_009",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_010": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_010",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_010",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_011": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_011",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_011",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_012": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_012",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_012",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_013": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_013",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_013",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_014": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_014",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_014",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_015": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_015",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_015",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_016": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_016",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_016",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_017": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_017",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_017",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_018": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_018",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_018",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_019": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_019",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_019",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_020": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_020",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_020",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_021": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_021",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_021",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_022": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_022",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_022",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_023": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_023",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_023",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s002_024": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s002_024",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s002_024",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_001": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_001",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_001",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_002": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_002",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_002",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_003": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_003",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_003",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_004": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_004",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_004",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_005": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_005",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_005",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_006": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_006",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_006",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_007": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_007",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_007",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_008": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_008",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_008",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_009": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_009",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_009",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_010": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_010",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_010",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_011": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_011",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_011",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_012": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_012",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_012",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_013": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_013",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_013",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_014": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_014",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_014",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_015": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_015",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_015",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_016": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_016",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_016",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_017": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_017",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_017",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_018": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_018",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_018",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_019": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_019",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_019",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_020": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_020",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_020",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_021": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_021",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_021",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_022": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_022",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_022",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_023": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_023",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_023",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_024": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_024",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_024",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_025": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_025",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_025",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_026": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_026",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_026",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_027": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_027",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_027",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_028": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_028",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_028",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_029": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_029",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_029",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_030": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_030",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_030",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_031": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_031",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_031",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_032": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_032",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_032",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_033": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_033",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_033",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_034": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_034",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_034",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_035": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_035",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_035",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_036": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_036",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_036",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_037": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_037",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_037",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_038": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_038",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_038",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_039": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_039",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_039",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s003_040": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s003_040",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s003_040",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_001": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_001",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_001",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_002": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_002",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_002",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_003": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_003",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_003",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_004": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_004",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_004",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_005": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_005",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_005",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_006": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_006",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_006",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_007": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_007",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_007",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_008": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_008",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_008",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_009": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_009",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_009",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_010": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_010",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_010",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_011": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_011",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_011",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_012": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_012",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_012",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_013": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_013",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_013",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_014": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_014",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_014",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_015": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_015",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_015",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_016": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_016",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_016",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_017": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_017",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_017",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_018": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_018",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_018",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_019": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_019",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_019",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_020": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_020",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_020",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_021": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_021",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_021",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s004_022": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s004_022",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s004_022",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_001": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_001",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_001",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_002": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_002",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_002",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_003": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_003",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_003",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_004": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_004",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_004",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_005": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_005",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_005",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_006": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_006",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_006",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_007": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_007",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_007",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_008": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_008",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_008",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_009": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_009",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_009",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_010": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_010",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_010",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_011": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_011",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_011",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_012": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_012",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_012",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_013": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_013",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_013",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_014": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_014",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_014",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_015": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_015",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_015",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_016": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_016",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_016",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_017": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_017",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_017",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_018": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_018",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_018",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_019": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_019",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_019",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_020": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_020",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_020",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_021": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_021",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_021",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_022": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_022",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_022",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_023": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_023",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_023",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_024": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_024",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_024",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_025": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_025",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_025",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_026": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_026",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_026",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_027": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_027",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_027",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_028": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_028",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_028",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_029": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_029",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_029",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_030": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_030",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_030",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_031": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_031",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_031",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_032": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_032",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_032",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_033": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_033",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_033",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_034": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_034",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_034",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_035": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_035",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_035",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_036": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_036",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_036",
+        "stream": false
+      }
+    ]
+  },
+  "voice.s005_037": {
+    "category": "voice",
+    "subtitle": "subtitles.wrmarvel.s005_037",
+    "sounds": [
+      {
+        "name": "wrmarvel:voice/s005_037",
+        "stream": false
+      }
+    ]
+  }
+}

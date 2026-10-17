@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="${loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="wrcore"
+version="${mod_version}"
+displayName="Worlds Reborn: Core"
+authors="${mod_authors}"
+description='''Shared framework: universe and content registries, player save data, networking, configuration and developer commands.'''
+
+[[dependencies.wrcore]]
+modId="neoforge"
+type="required"
+versionRange="${neo_version_range}"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.wrcore]]
+modId="minecraft"
+type="required"
+versionRange="${minecraft_version_range}"
+ordering="NONE"
+side="BOTH"
