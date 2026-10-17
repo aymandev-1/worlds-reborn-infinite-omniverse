@@ -42,11 +42,11 @@ quest `wrmarvel:wr1_0nn` (see `MarvelIds.java`).
 | # | Scene | Canon | Player | What happens |
 |---|---|---|---|---|
 | 011 | The Missing Traveller | APPROVED | Spider-Man | Peter searches for Steve, rescues accident victims, records another Earth in the sky, meets Daredevil, Jessica Jones, Luke Cage, Danny Rand and Punisher. |
-| 012 | A World on Alert | APPROVED (script not yet in repo) | Sam Wilson | Avengers survey the phenomenon and rescue a helicopter; Shuri confirms an inhabited second Earth. Flight mechanics. |
-| 013 | Another Response | APPROVED (script not yet in repo) | Bucky Barnes | New Avengers rescue scientists with Clint and Kate Bishop, recovering measurements of the disturbance. |
-| 014 | First Contact | APPROVED (script not yet in repo) | Sam Wilson | Responders meet; their array contacts Reed Richards in another universe and exchanges measurements. |
-| 015 | Across the Divide | APPROVED (script not yet in repo) | Sue Storm | Fantastic Four defend their lab, keep comms up, find more than two universes are affected. Force fields. |
-| 016 | The Other Side | APPROVED (script not yet in repo) | Cyclops | X-Men rescue monitoring-station staff and find a dangerous overlap near Xavier's school. Optic blasts. |
+| 012 | A World on Alert | APPROVED | Sam Wilson | Avengers survey the phenomenon and rescue a helicopter; Shuri confirms an inhabited second Earth. Flight mechanics. |
+| 013 | Another Response | APPROVED | Bucky Barnes | New Avengers rescue scientists with Clint and Kate Bishop, recovering measurements of the disturbance. |
+| 014 | First Contact | APPROVED | Sam Wilson | Responders meet; their array contacts Reed Richards in another universe and exchanges measurements. |
+| 015 | Across the Divide | APPROVED | Sue Storm | Fantastic Four defend their lab, keep comms up, find more than two universes are affected. Force fields. |
+| 016 | The Other Side | APPROVED | Cyclops | X-Men rescue monitoring-station staff and find a dangerous overlap near Xavier's school. Optic blasts. |
 | 017 | The Surviving Fragment | ESTABLISHED | — | Heroes investigate a fragment of a devastated reality and recover an evacuation recording. |
 | 018 | The Final Transmission | PROPOSED | — | The recording shows the reality's final moments and raises questions about why evacuation routes failed. |
 | 019 | Separate Worlds, Shared Danger | PROPOSED | — | Avengers, Fantastic Four and X-Men study findings independently while the crisis spreads. |

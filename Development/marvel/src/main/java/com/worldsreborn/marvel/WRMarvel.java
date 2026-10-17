@@ -11,7 +11,8 @@ import net.neoforged.neoforge.common.NeoForge;
 /**
  * Worlds Reborn: Marvel. MC-616 Steve's first crossover, into MU-616. This build contains the first playable
  * milestones: Act 1 (Doomsday), Scenes 1-5 (the village map to the TVA failing to locate MC-616) and Scenes 6-11
- * (the traveller in the records, the evacuation, the breach, the Watchers' sanctuary and Spider-Man's search).
+ * (the traveller in the records, the evacuation, the breach, the Watchers' sanctuary and Spider-Man's search) and
+ * Scenes 12-16 (Sam Wilson, Bucky Barnes, Sue Storm and Cyclops as Earth's heroes respond).
  */
 @Mod(WRMarvel.MODID)
 public final class WRMarvel {
@@ -31,6 +32,7 @@ public final class WRMarvel {
 
         NeoForge.EVENT_BUS.register(MarvelStory.class);
         NeoForge.EVENT_BUS.register(com.worldsreborn.marvel.doomsday.Doomsday.class);
+        NeoForge.EVENT_BUS.register(com.worldsreborn.marvel.doomsday.Responders.class);
         NeoForge.EVENT_BUS.addListener(MarvelCommands::register);
     }
 

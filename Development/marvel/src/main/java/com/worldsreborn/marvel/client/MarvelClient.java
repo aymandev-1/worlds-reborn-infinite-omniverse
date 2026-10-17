@@ -74,6 +74,7 @@ public final class MarvelClient {
 
         // Scenes 6-11.
         DoomsdayClient.setup();
+        RespondersClient.setup();
     }
 
     private static final ResourceLocation STEVE = ResourceLocation.withDefaultNamespace("textures/entity/player/wide/steve.png");

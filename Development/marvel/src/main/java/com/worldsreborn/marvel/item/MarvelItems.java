@@ -27,6 +27,9 @@ public final class MarvelItems {
             () -> new com.worldsreborn.marvel.doomsday.WebShooterItem(new Item.Properties().stacksTo(1)));
     public static final DeferredItem<com.worldsreborn.marvel.doomsday.ScannerItem> PETER_SCANNER = ITEMS.register("peter_scanner",
             () -> new com.worldsreborn.marvel.doomsday.ScannerItem(new Item.Properties().stacksTo(1)));
+    /** A disturbance recorder carried out of a damaged facility (Scenes 13 and 16). */
+    public static final DeferredItem<com.worldsreborn.marvel.doomsday.DeliveryItem> MONITORING_RECORDER = ITEMS.register("monitoring_recorder",
+            () -> new com.worldsreborn.marvel.doomsday.DeliveryItem("item.wrmarvel.monitoring_recorder.for", new Item.Properties().stacksTo(1)));
 
     private MarvelItems() {
     }

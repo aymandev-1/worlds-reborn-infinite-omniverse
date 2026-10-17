@@ -36,6 +36,11 @@ public final class PerspectiveStash extends SavedData {
         player.getInventory().clearContent();
     }
 
+    /** Whether this player's own inventory is put aside (they are playing as someone else). */
+    static boolean holds(ServerPlayer player) {
+        return get(player).stashed.containsKey(player.getUUID());
+    }
+
     /** Gives the stashed inventory back (Peter's kit is removed first). Does nothing if nothing is stashed. */
     static void restore(ServerPlayer player) {
         PerspectiveStash data = get(player);

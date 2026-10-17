@@ -20,7 +20,7 @@ import java.util.List;
 import static com.worldsreborn.marvel.MarvelIds.*;
 
 /**
- * Registers the Marvel campaign's content for Act 1, Scenes 1-5, following the locked 160-scene outline.
+ * Registers the Marvel campaign's content for Act 1: Scenes 1-5 here, Scenes 6-16 through the doomsday package.
  * <p>
  * Dialogue is the user's Scenes 001-005 voice acting script (Draft 1), word for word, every line voiced; see
  * {@link MarvelScript} and tools/voice_script.py.
@@ -35,6 +35,7 @@ public final class MarvelContent {
     public static void register() {
         WRContent.UNIVERSES.register(new UniverseInfo(MU_616, "universe.wrmarvel.mu616", "marvel", true));
         destinations();
+        com.worldsreborn.marvel.doomsday.Responders.registerAbilities();
         quests();
         dialogues();
         characters();
@@ -85,7 +86,16 @@ public final class MarvelContent {
         quest(S09, 9, List.of(action(S09, S09_REFUGEES), action(S09, S09_BACKUP), action(S09, S09_DOORWAY), action(S09, S09_ARRIVE)), S10);
         quest(S10, 10, List.of(action(S10, S10_REFUGEES), action(S10, S10_FALLS), action(S10, S10_SANCTUARY), action(S10, S10_HANDOVER)), S11);
         quest(S11, 11, List.of(action(S11, S11_ALLEY), action(S11, S11_SCAN), action(S11, S11_ACCIDENT), action(S11, S11_SKY),
-                action(S11, S11_MEETING), action(S11, S11_SHARE)), null);
+                action(S11, S11_MEETING), action(S11, S11_SHARE)), S12);
+        // Act 1 "Doomsday", Scenes 12-16 (see doomsday.Responders): the approved checkpoints, in order.
+        quest(S12, 12, List.of(action(S12, S12_RESPONSE), action(S12, S12_SURVEY), action(S12, S12_PASSENGERS), action(S12, S12_DONE)), S13);
+        quest(S13, 13, List.of(action(S13, S13_ENTRY), action(S13, S13_FIRST_GROUP), action(S13, S13_STAFF), action(S13, S13_RECORDER),
+                action(S13, S13_DONE)), S14);
+        quest(S14, 14, List.of(action(S14, S14_PLAN), action(S14, S14_ARRAY), action(S14, S14_DONE)), S15);
+        quest(S15, 15, List.of(action(S15, S15_TEAM), action(S15, S15_LAB), action(S15, S15_SENSORS), action(S15, S15_ASSEMBLY),
+                action(S15, S15_DONE)), S16);
+        quest(S16, 16, List.of(action(S16, S16_BRIEFING), action(S16, S16_ACCESS), action(S16, S16_STAFF), action(S16, S16_DATA),
+                action(S16, S16_DONE)), null);
     }
 
     /** One numbered line of the voice acting script: its text, its recording and, for Steve, a reply prompt. */
@@ -137,6 +147,7 @@ public final class MarvelContent {
         dialogue(D05_INTAKE, lines(5, 12, 18));
         dialogue(D05_ANALYSIS, lines(5, 19, 37));
         com.worldsreborn.marvel.doomsday.Doomsday.registerDialogues();
+        com.worldsreborn.marvel.doomsday.Responders.registerDialogues();
     }
 
     private static void character(String id, CharacterDef.Model model, ResourceLocation texture) {
@@ -185,6 +196,10 @@ public final class MarvelContent {
                 {com.worldsreborn.marvel.doomsday.Doomsday.PEDESTRIAN, CIVILIANS.get(2)}};
         for (String[] r : roles) {
             character(r[0], CharacterDef.Model.HUMANOID, skin(r[1]));
+        }
+        // Scenes 12-16: each character wears their own (generated stand-in) skin.
+        for (String id : com.worldsreborn.marvel.doomsday.Responders.CHARACTERS) {
+            character(id, CharacterDef.Model.HUMANOID, skin(id));
         }
     }
 }

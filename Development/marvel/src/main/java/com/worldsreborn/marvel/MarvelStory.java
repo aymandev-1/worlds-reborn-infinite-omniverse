@@ -852,6 +852,7 @@ public final class MarvelStory {
         }
         p.clearFlag(FLAG_MILESTONE_1);
         p.clearFlag(FLAG_MILESTONE_2);
+        p.clearFlag(FLAG_MILESTONE_3);
         p.clearFlag(WRTravel.FREE_TRAVEL_FLAG);
         com.worldsreborn.marvel.doomsday.Doomsday.leavePerspective(player);
         p.clearFlag(FLAG_S05_INTAKE);

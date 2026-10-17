@@ -1,0 +1,126 @@
+﻿id,scene,beat,speaker,text,recording_status,audio_file,subtitle_key
+wr_d012_sam_001,WR1_012,12.1,SAM,Different locations. Same object.,audio_missing,audio/game_ready/wr_d012_sam_001.wav,wr_d012_sam_001
+wr_d012_shuri_001,WR1_012,12.1,SHURI,Send the original recordings. Not copies from broadcasts.,audio_missing,audio/game_ready/wr_d012_shuri_001.wav,wr_d012_shuri_001
+wr_d012_scott_001,WR1_012,12.1,SCOTT,Please say somebody’s already ruled out a very ambitious advertising campaign.,audio_missing,audio/game_ready/wr_d012_scott_001.wav,wr_d012_scott_001
+wr_d012_shuri_002,WR1_012,12.1,SHURI,I’m working with measurements.,audio_missing,audio/game_ready/wr_d012_shuri_002.wav,wr_d012_shuri_002
+wr_d012_sam_002,WR1_012,12.1,SAM,"Joaquin, we get above the interference. Scott, Shang-Chi—help the crews below.",audio_missing,audio/game_ready/wr_d012_sam_002.wav,wr_d012_sam_002
+wr_d012_shang_chi_001,WR1_012,12.1,SHANG-CHI,Where do they need us?,audio_missing,audio/game_ready/wr_d012_shang_chi_001.wav,wr_d012_shang_chi_001
+wr_d012_sam_003,WR1_012,12.1,SAM,We’ll keep one channel open.,audio_missing,audio/game_ready/wr_d012_sam_003.wav,wr_d012_sam_003
+wr_d012_joaquin_001,WR1_012,12.2,JOAQUIN,First position. Sending.,audio_missing,audio/game_ready/wr_d012_joaquin_001.wav,wr_d012_joaquin_001
+wr_d012_shuri_003,WR1_012,12.2,SHURI,Received. Keep your instruments on the same settings.,audio_missing,audio/game_ready/wr_d012_shuri_003.wav,wr_d012_shuri_003
+wr_d012_sam_004,WR1_012,12.2,SAM,We’re not getting closer just for a better picture.,audio_missing,audio/game_ready/wr_d012_sam_004.wav,wr_d012_sam_004
+wr_d012_pilot_001,WR1_012,12.3,PILOT,We’re losing reliable instruments. Requesting assistance.,audio_missing,audio/game_ready/wr_d012_pilot_001.wav,wr_d012_pilot_001
+wr_d012_joaquin_002,WR1_012,12.3,JOAQUIN,"Captain, helicopter west of us. They’re struggling to hold position.",audio_missing,audio/game_ready/wr_d012_joaquin_002.wav,wr_d012_joaquin_002
+wr_d012_sam_005,WR1_012,12.3,SAM,"I see them. Shuri, save the survey. We’re switching to rescue.",audio_missing,audio/game_ready/wr_d012_sam_005.wav,wr_d012_sam_005
+wr_d012_sam_006,WR1_012,12.4,SAM,Look at me. Follow my instructions.,audio_missing,audio/game_ready/wr_d012_sam_006.wav,wr_d012_sam_006
+wr_d012_passenger_001,WR1_012,12.4,PASSENGER,What’s happening up there?,audio_missing,audio/game_ready/wr_d012_passenger_001.wav,wr_d012_passenger_001
+wr_d012_sam_007,WR1_012,12.4,SAM,"Right now, we’re getting you down.",audio_missing,audio/game_ready/wr_d012_sam_007.wav,wr_d012_sam_007
+wr_d012_joaquin_003,WR1_012,12.4,JOAQUIN,Landing area is clear.,audio_missing,audio/game_ready/wr_d012_joaquin_003.wav,wr_d012_joaquin_003
+wr_d012_shang_chi_002,WR1_012,12.4,SHANG-CHI,We’ve cleared the approach.,audio_missing,audio/game_ready/wr_d012_shang_chi_002.wav,wr_d012_shang_chi_002
+wr_d012_scott_002,WR1_012,12.4,SCOTT,Emergency crews are ready.,audio_missing,audio/game_ready/wr_d012_scott_002.wav,wr_d012_scott_002
+wr_d012_sam_008,WR1_012,12.5,SAM,Everyone accounted for?,audio_missing,audio/game_ready/wr_d012_sam_008.wav,wr_d012_sam_008
+wr_d012_joaquin_004,WR1_012,12.5,JOAQUIN,Pilot and passengers. All down.,audio_missing,audio/game_ready/wr_d012_joaquin_004.wav,wr_d012_joaquin_004
+wr_d012_shuri_004,WR1_012,12.5,SHURI,Your flight recordings are clean enough to isolate the surface.,audio_missing,audio/game_ready/wr_d012_shuri_004.wav,wr_d012_shuri_004
+wr_d012_shuri_005,WR1_012,12.6,SHURI,This is not just a light in the atmosphere. There are surface features—and artificial lights.,audio_missing,audio/game_ready/wr_d012_shuri_005.wav,wr_d012_shuri_005
+wr_d012_sam_009,WR1_012,12.6,SAM,People?,audio_missing,audio/game_ready/wr_d012_sam_009.wav,wr_d012_sam_009
+wr_d012_shuri_006,WR1_012,12.6,SHURI,The evidence supports that.,audio_missing,audio/game_ready/wr_d012_shuri_006.wav,wr_d012_shuri_006
+wr_d012_sam_010,WR1_012,12.6,SAM,Then protecting our world doesn’t mean treating theirs as an enemy.,audio_missing,audio/game_ready/wr_d012_sam_010.wav,wr_d012_sam_010
+wr_d013_yelena_001,WR1_013,13.1,YELENA,Scientists inside. Emergency power failing. That is the mission.,audio_missing,audio/game_ready/wr_d013_yelena_001.wav,wr_d013_yelena_001
+wr_d013_bucky_001,WR1_013,13.1,BUCKY,People first. Records if we can reach them safely.,audio_missing,audio/game_ready/wr_d013_bucky_001.wav,wr_d013_bucky_001
+wr_d013_walker_001,WR1_013,13.1,WALKER,Perimeter’s clear enough to enter.,audio_missing,audio/game_ready/wr_d013_walker_001.wav,wr_d013_walker_001
+wr_d013_ghost_001,WR1_013,13.1,GHOST,Some internal doors are sealed.,audio_missing,audio/game_ready/wr_d013_ghost_001.wav,wr_d013_ghost_001
+wr_d013_sentry_001,WR1_013,13.1,SENTRY,Tell me what needs holding.,audio_missing,audio/game_ready/wr_d013_sentry_001.wav,wr_d013_sentry_001
+wr_d013_kate_001,WR1_013,13.2,KATE,We’ve got people across the broken section.,audio_missing,audio/game_ready/wr_d013_kate_001.wav,wr_d013_kate_001
+wr_d013_clint_001,WR1_013,13.2,CLINT,They called us before the comms went down.,audio_missing,audio/game_ready/wr_d013_clint_001.wav,wr_d013_clint_001
+wr_d013_yelena_002,WR1_013,13.2,YELENA,Of course you were already here.,audio_missing,audio/game_ready/wr_d013_yelena_002.wav,wr_d013_yelena_002
+wr_d013_clint_002,WR1_013,13.2,CLINT,We can catch up outside.,audio_missing,audio/game_ready/wr_d013_clint_002.wav,wr_d013_clint_002
+wr_d013_bucky_002,WR1_013,13.3,BUCKY,This way. Stay with the person ahead of you.,audio_missing,audio/game_ready/wr_d013_bucky_002.wav,wr_d013_bucky_002
+wr_d013_yelena_003,WR1_013,13.3,YELENA,Room clear. Moving.,audio_missing,audio/game_ready/wr_d013_yelena_003.wav,wr_d013_yelena_003
+wr_d013_kate_002,WR1_013,13.4,KATE,Cable’s set.,audio_missing,audio/game_ready/wr_d013_kate_002.wav,wr_d013_kate_002
+wr_d013_clint_003,WR1_013,13.4,CLINT,One at a time. Keep your weight centred.,audio_missing,audio/game_ready/wr_d013_clint_003.wav,wr_d013_clint_003
+wr_d013_red_guardian_001,WR1_013,13.4,RED GUARDIAN,The exit stays open!,audio_missing,audio/game_ready/wr_d013_red_guardian_001.wav,wr_d013_red_guardian_001
+wr_d013_walker_002,WR1_013,13.4,WALKER,Then help me clear it.,audio_missing,audio/game_ready/wr_d013_walker_002.wav,wr_d013_walker_002
+wr_d013_sentry_002,WR1_013,13.4,SENTRY,I can hold this. Keep them moving.,audio_missing,audio/game_ready/wr_d013_sentry_002.wav,wr_d013_sentry_002
+wr_d013_scientist_001,WR1_013,13.5,SCIENTIST,It was measuring the disturbance before the building failed.,audio_missing,audio/game_ready/wr_d013_scientist_001.wav,wr_d013_scientist_001
+wr_d013_bucky_003,WR1_013,13.5,BUCKY,Can we remove it?,audio_missing,audio/game_ready/wr_d013_bucky_003.wav,wr_d013_bucky_003
+wr_d013_scientist_002,WR1_013,13.5,SCIENTIST,The recorder. Not the whole array.,audio_missing,audio/game_ready/wr_d013_scientist_002.wav,wr_d013_scientist_002
+wr_d013_scientist_003,WR1_013,13.6,SCIENTIST,The boundary disturbance keeps returning. Each appearance lasts longer.,audio_missing,audio/game_ready/wr_d013_scientist_003.wav,wr_d013_scientist_003
+wr_d013_yelena_004,WR1_013,13.6,YELENA,How much longer?,audio_missing,audio/game_ready/wr_d013_yelena_004.wav,wr_d013_yelena_004
+wr_d013_scientist_004,WR1_013,13.6,SCIENTIST,Enough that the old projections are no longer reliable.,audio_missing,audio/game_ready/wr_d013_scientist_004.wav,wr_d013_scientist_004
+wr_d013_bucky_004,WR1_013,13.6,BUCKY,Sam needs this.,audio_missing,audio/game_ready/wr_d013_bucky_004.wav,wr_d013_bucky_004
+wr_d013_bucky_005,WR1_013,13.6,BUCKY,We have independent readings. We should compare them.,audio_missing,audio/game_ready/wr_d013_bucky_005.wav,wr_d013_bucky_005
+wr_d013_sam_001,WR1_013,13.6,SAM,Send what you have. We’ll make one picture.,audio_missing,audio/game_ready/wr_d013_sam_001.wav,wr_d013_sam_001
+wr_d014_sam_001,WR1_014,14.1,SAM,We’ve been answering the same emergency from different directions. That changes now.,audio_missing,audio/game_ready/wr_d014_sam_001.wav,wr_d014_sam_001
+wr_d014_yelena_001,WR1_014,14.1,YELENA,Good. Start with the part we can act on.,audio_missing,audio/game_ready/wr_d014_yelena_001.wav,wr_d014_yelena_001
+wr_d014_bucky_001,WR1_014,14.1,BUCKY,The facility recorder is independent of the flight survey.,audio_missing,audio/game_ready/wr_d014_bucky_001.wav,wr_d014_bucky_001
+wr_d014_shuri_001,WR1_014,14.1,SHURI,And both show the same trend.,audio_missing,audio/game_ready/wr_d014_shuri_001.wav,wr_d014_shuri_001
+wr_d014_shuri_002,WR1_014,14.1,SHURI,The appearances are lasting longer. The intervals are shortening.,audio_missing,audio/game_ready/wr_d014_shuri_002.wav,wr_d014_shuri_002
+wr_d014_sam_002,WR1_014,14.2,SAM,Protect people while we investigate.,audio_missing,audio/game_ready/wr_d014_sam_002.wav,wr_d014_sam_002
+wr_d014_sam_003,WR1_014,14.2,SAM,We need contact before assumptions become orders.,audio_missing,audio/game_ready/wr_d014_sam_003.wav,wr_d014_sam_003
+wr_d014_sam_004,WR1_014,14.2,SAM,Share the evidence. Nobody works from half a picture.,audio_missing,audio/game_ready/wr_d014_sam_004.wav,wr_d014_sam_004
+wr_d014_clint_001,WR1_014,14.2,CLINT,What do we tell the crews?,audio_missing,audio/game_ready/wr_d014_clint_001.wav,wr_d014_clint_001
+wr_d014_sam_005,WR1_014,14.2,SAM,What we know. And what we don’t.,audio_missing,audio/game_ready/wr_d014_sam_005.wav,wr_d014_sam_005
+wr_d014_shuri_003,WR1_014,14.3,SHURI,There may be a window. We can attempt a transmission.,audio_missing,audio/game_ready/wr_d014_shuri_003.wav,wr_d014_shuri_003
+wr_d014_scott_001,WR1_014,14.3,SCOTT,"Communication, not a doorway?",audio_missing,audio/game_ready/wr_d014_scott_001.wav,wr_d014_scott_001
+wr_d014_shuri_004,WR1_014,14.3,SHURI,Correct.,audio_missing,audio/game_ready/wr_d014_shuri_004.wav,wr_d014_shuri_004
+wr_d014_reed_001,WR1_014,14.4,REED,We can see your Earth. We’re trying to stop this too.,audio_missing,audio/game_ready/wr_d014_reed_001.wav,wr_d014_reed_001
+wr_d014_sam_006,WR1_014,14.4,SAM,This is Captain America. Who am I speaking to?,audio_missing,audio/game_ready/wr_d014_sam_006.wav,wr_d014_sam_006
+wr_d014_reed_002,WR1_014,14.4,REED,Reed Richards. The Fantastic Four.,audio_missing,audio/game_ready/wr_d014_reed_002.wav,wr_d014_reed_002
+wr_d014_sam_007,WR1_014,14.4,SAM,We have people studying the disturbance here.,audio_missing,audio/game_ready/wr_d014_sam_007.wav,wr_d014_sam_007
+wr_d014_shuri_005,WR1_014,14.4,SHURI,I can send a limited packet of readings.,audio_missing,audio/game_ready/wr_d014_shuri_005.wav,wr_d014_shuri_005
+wr_d014_reed_003,WR1_014,14.4,REED,Send it. I’ll return our measurements.,audio_missing,audio/game_ready/wr_d014_reed_003.wav,wr_d014_reed_003
+wr_d014_shuri_006,WR1_014,14.5,SHURI,The timing matches.,audio_missing,audio/game_ready/wr_d014_shuri_006.wav,wr_d014_shuri_006
+wr_d014_reed_004,WR1_014,14.5,REED,We are measuring the same boundary from opposite sides.,audio_missing,audio/game_ready/wr_d014_reed_004.wav,wr_d014_reed_004
+wr_d014_sam_008,WR1_014,14.5,SAM,Then our objective is to save both worlds.,audio_missing,audio/game_ready/wr_d014_sam_008.wav,wr_d014_sam_008
+wr_d014_reed_005,WR1_014,14.5,REED,Agreed.,audio_missing,audio/game_ready/wr_d014_reed_005.wav,wr_d014_reed_005
+wr_d014_reed_006,WR1_014,14.5,REED,I’ll work on keeping this channel open.,audio_missing,audio/game_ready/wr_d014_reed_006.wav,wr_d014_reed_006
+wr_d015_johnny_001,WR1_015,15.1,JOHNNY,So there really are people over there.,audio_missing,audio/game_ready/wr_d015_johnny_001.wav,wr_d015_johnny_001
+wr_d015_ben_001,WR1_015,15.1,BEN,There are people here too. Tell me where you need me.,audio_missing,audio/game_ready/wr_d015_ben_001.wav,wr_d015_ben_001
+wr_d015_reed_001,WR1_015,15.1,REED,The receiving system is losing alignment.,audio_missing,audio/game_ready/wr_d015_reed_001.wav,wr_d015_reed_001
+wr_d015_sue_001,WR1_015,15.1,SUE,"Then we keep it steady. Johnny, rooftop sensors. Ben, the support assembly.",audio_missing,audio/game_ready/wr_d015_sue_001.wav,wr_d015_sue_001
+wr_d015_sue_002,WR1_015,15.2,SUE,Clear that aisle. Behind me.,audio_missing,audio/game_ready/wr_d015_sue_002.wav,wr_d015_sue_002
+wr_d015_reed_002,WR1_015,15.2,REED,I need a little longer.,audio_missing,audio/game_ready/wr_d015_reed_002.wav,wr_d015_reed_002
+wr_d015_sue_003,WR1_015,15.2,SUE,You have it. Use it.,audio_missing,audio/game_ready/wr_d015_sue_003.wav,wr_d015_sue_003
+wr_d015_johnny_002,WR1_015,15.3,JOHNNY,First sensor’s mounted. Second position is moving.,audio_missing,audio/game_ready/wr_d015_johnny_002.wav,wr_d015_johnny_002
+wr_d015_sue_004,WR1_015,15.3,SUE,Wait for my field.,audio_missing,audio/game_ready/wr_d015_sue_004.wav,wr_d015_sue_004
+wr_d015_johnny_003,WR1_015,15.3,JOHNNY,Done. Sending the reading.,audio_missing,audio/game_ready/wr_d015_johnny_003.wav,wr_d015_johnny_003
+wr_d015_ben_002,WR1_015,15.4,BEN,This thing is trying to leave the room.,audio_missing,audio/game_ready/wr_d015_ben_002.wav,wr_d015_ben_002
+wr_d015_reed_003,WR1_015,15.4,REED,Hold the base. Not the upper ring.,audio_missing,audio/game_ready/wr_d015_reed_003.wav,wr_d015_reed_003
+wr_d015_ben_003,WR1_015,15.4,BEN,Helpful distinction.,audio_missing,audio/game_ready/wr_d015_ben_003.wav,wr_d015_ben_003
+wr_d015_reed_004,WR1_015,15.5,REED,Captain Wilson? Shuri?,audio_missing,audio/game_ready/wr_d015_reed_004.wav,wr_d015_reed_004
+wr_d015_shuri_001,WR1_015,15.5,SHURI,We’re receiving.,audio_missing,audio/game_ready/wr_d015_shuri_001.wav,wr_d015_shuri_001
+wr_d015_sam_001,WR1_015,15.5,SAM,What happened?,audio_missing,audio/game_ready/wr_d015_sam_001.wav,wr_d015_sam_001
+wr_d015_sue_005,WR1_015,15.5,SUE,The same thing your people are dealing with. We’ve got the channel back.,audio_missing,audio/game_ready/wr_d015_sue_005.wav,wr_d015_sue_005
+wr_d015_reed_005,WR1_015,15.6,REED,There are additional disturbances.,audio_missing,audio/game_ready/wr_d015_reed_005.wav,wr_d015_reed_005
+wr_d015_shuri_002,WR1_015,15.6,SHURI,Separate from this boundary?,audio_missing,audio/game_ready/wr_d015_shuri_002.wav,wr_d015_shuri_002
+wr_d015_reed_006,WR1_015,15.6,REED,Yes. The pattern repeats beyond our two universes.,audio_missing,audio/game_ready/wr_d015_reed_006.wav,wr_d015_reed_006
+wr_d015_sam_002,WR1_015,15.6,SAM,How many?,audio_missing,audio/game_ready/wr_d015_sam_002.wav,wr_d015_sam_002
+wr_d015_reed_007,WR1_015,15.6,REED,We don’t have a complete count.,audio_missing,audio/game_ready/wr_d015_reed_007.wav,wr_d015_reed_007
+wr_d015_reed_008,WR1_015,15.6,REED,Saving our two worlds won’t be enough.,audio_missing,audio/game_ready/wr_d015_reed_008.wav,wr_d015_reed_008
+wr_d016_beast_001,WR1_016,16.1,BEAST,The station stopped transmitting during the last disturbance.,audio_missing,audio/game_ready/wr_d016_beast_001.wav,wr_d016_beast_001
+wr_d016_cyclops_001,WR1_016,16.1,CYCLOPS,Staff?,audio_missing,audio/game_ready/wr_d016_cyclops_001.wav,wr_d016_cyclops_001
+wr_d016_beast_002,WR1_016,16.1,BEAST,No confirmed evacuation.,audio_missing,audio/game_ready/wr_d016_beast_002.wav,wr_d016_beast_002
+wr_d016_xavier_001,WR1_016,16.1,XAVIER,Find them. Bring back the readings if it is safe.,audio_missing,audio/game_ready/wr_d016_xavier_001.wav,wr_d016_xavier_001
+wr_d016_magneto_001,WR1_016,16.1,MAGNETO,And find out how close this is coming.,audio_missing,audio/game_ready/wr_d016_magneto_001.wav,wr_d016_magneto_001
+wr_d016_cyclops_002,WR1_016,16.1,CYCLOPS,"Jean, Hank, Kurt. We go together.",audio_missing,audio/game_ready/wr_d016_cyclops_002.wav,wr_d016_cyclops_002
+wr_d016_nightcrawler_001,WR1_016,16.2,NIGHTCRAWLER,There are people inside.,audio_missing,audio/game_ready/wr_d016_nightcrawler_001.wav,wr_d016_nightcrawler_001
+wr_d016_jean_001,WR1_016,16.2,JEAN,The upper section is unstable.,audio_missing,audio/game_ready/wr_d016_jean_001.wav,wr_d016_jean_001
+wr_d016_cyclops_003,WR1_016,16.2,CYCLOPS,"Kurt, locate the staff. Jean, keep the route protected. Hank, stay with me.",audio_missing,audio/game_ready/wr_d016_cyclops_003.wav,wr_d016_cyclops_003
+wr_d016_jean_002,WR1_016,16.3,JEAN,That beam is carrying the ceiling.,audio_missing,audio/game_ready/wr_d016_jean_002.wav,wr_d016_jean_002
+wr_d016_cyclops_004,WR1_016,16.3,CYCLOPS,Then we leave it.,audio_missing,audio/game_ready/wr_d016_cyclops_004.wav,wr_d016_cyclops_004
+wr_d016_nightcrawler_002,WR1_016,16.4,NIGHTCRAWLER,I can bring them to the cleared position.,audio_missing,audio/game_ready/wr_d016_nightcrawler_002.wav,wr_d016_nightcrawler_002
+wr_d016_cyclops_005,WR1_016,16.4,CYCLOPS,One group at a time. We’ll hold the route.,audio_missing,audio/game_ready/wr_d016_cyclops_005.wav,wr_d016_cyclops_005
+wr_d016_scientist_001,WR1_016,16.4,SCIENTIST,The lower recorder is still running.,audio_missing,audio/game_ready/wr_d016_scientist_001.wav,wr_d016_scientist_001
+wr_d016_beast_003,WR1_016,16.4,BEAST,I know where to look.,audio_missing,audio/game_ready/wr_d016_beast_003.wav,wr_d016_beast_003
+wr_d016_beast_004,WR1_016,16.5,BEAST,The backup has the last complete survey.,audio_missing,audio/game_ready/wr_d016_beast_004.wav,wr_d016_beast_004
+wr_d016_cyclops_006,WR1_016,16.5,CYCLOPS,Take the recorder. We are not rebuilding the station.,audio_missing,audio/game_ready/wr_d016_cyclops_006.wav,wr_d016_cyclops_006
+wr_d016_cyclops_007,WR1_016,16.6,CYCLOPS,That isn’t our landscape.,audio_missing,audio/game_ready/wr_d016_cyclops_007.wav,wr_d016_cyclops_007
+wr_d016_beast_005,WR1_016,16.6,BEAST,No. The coordinates are consistent. The terrain is not.,audio_missing,audio/game_ready/wr_d016_beast_005.wav,wr_d016_beast_005
+wr_d016_jean_003,WR1_016,16.6,JEAN,Another place crossing into ours?,audio_missing,audio/game_ready/wr_d016_jean_003.wav,wr_d016_jean_003
+wr_d016_beast_006,WR1_016,16.6,BEAST,That is what the evidence suggests.,audio_missing,audio/game_ready/wr_d016_beast_006.wav,wr_d016_beast_006
+wr_d016_cyclops_008,WR1_016,16.6,CYCLOPS,Send the coordinates to the Professor.,audio_missing,audio/game_ready/wr_d016_cyclops_008.wav,wr_d016_cyclops_008
+wr_d016_xavier_002,WR1_016,16.7,XAVIER,Begin preparations to move the students if necessary.,audio_missing,audio/game_ready/wr_d016_xavier_002.wav,wr_d016_xavier_002
+wr_d016_magneto_002,WR1_016,16.7,MAGNETO,Preparations are not protection.,audio_missing,audio/game_ready/wr_d016_magneto_002.wav,wr_d016_magneto_002
+wr_d016_cyclops_009,WR1_016,16.7,CYCLOPS,Then help us protect them. We investigate the site before anything crosses.,audio_missing,audio/game_ready/wr_d016_cyclops_009.wav,wr_d016_cyclops_009
+wr_d016_magneto_003,WR1_016,16.7,MAGNETO,And if investigation is not enough?,audio_missing,audio/game_ready/wr_d016_magneto_003.wav,wr_d016_magneto_003
+wr_d016_cyclops_010,WR1_016,16.7,CYCLOPS,We decide from evidence. Not fear.,audio_missing,audio/game_ready/wr_d016_cyclops_010.wav,wr_d016_cyclops_010

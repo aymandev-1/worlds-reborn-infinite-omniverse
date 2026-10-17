@@ -216,7 +216,7 @@ def main():
     json.dump(lang, open(lang_path, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
 
     sounds_path = os.path.join(ASSETS, "sounds.json")
-    sounds = {k: v for k, v in json.load(open(sounds_path)).items() if not k.startswith("voice.wr_d0")}
+    sounds = {k: v for k, v in json.load(open(sounds_path)).items() if not k.startswith(("voice.wr_d00", "voice.wr_d010_", "voice.wr_d011_"))}
     recorded = 0
     for lid, *_ in rows:
         if os.path.exists(os.path.join(ASSETS, "sounds/voice", lid + ".ogg")):

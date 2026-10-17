@@ -1,0 +1,28 @@
+{
+ "variants": {
+  "kind=route_table": {
+   "model": "wrmarvel:block/story_control_route_table"
+  },
+  "kind=brace": {
+   "model": "wrmarvel:block/story_control_brace"
+  },
+  "kind=recorder": {
+   "model": "wrmarvel:block/story_control_recorder"
+  },
+  "kind=power": {
+   "model": "wrmarvel:block/story_control_power"
+  },
+  "kind=dish": {
+   "model": "wrmarvel:block/story_control_dish"
+  },
+  "kind=test": {
+   "model": "wrmarvel:block/story_control_test"
+  },
+  "kind=transmit": {
+   "model": "wrmarvel:block/story_control_transmit"
+  },
+  "kind=clamp": {
+   "model": "wrmarvel:block/story_control_clamp"
+  }
+ }
+}

@@ -69,7 +69,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import static com.worldsreborn.marvel.MarvelIds.*;
 
 /**
- * Runs Act 1 "Doomsday", Scenes 6-11 (WR1_006-WR1_011).
+ * Runs Act 1 "Doomsday", Scenes 6-11 (WR1_006-WR1_011), and routes Scenes 12-16 to {@link Responders}, which uses the
+ * same session, timed beats and helpers.
  * <p>
  * Like {@link com.worldsreborn.marvel.MarvelStory}, everything is driven from the player's saved quest step: each step
  * is named after the checkpoint it reaches, and {@link #setup} makes the world match the current step (people at
@@ -81,7 +82,7 @@ import static com.worldsreborn.marvel.MarvelIds.*;
  * Dialogue text is {@link MarvelScript611}; lines without a recording are shown as subtitles only (audio_missing).
  */
 public final class Doomsday {
-    private static final String NS = WRMarvel.MODID + ":";
+    static final String NS = WRMarvel.MODID + ":";
     public static final String PETER_SKIN = NS + "textures/entity/tom_spiderman.png";
 
     private Doomsday() {
@@ -165,11 +166,11 @@ public final class Doomsday {
 
     // ================================================================== saved state and timed beats
 
-    private static boolean state(ServerPlayer player, String key) {
+    static boolean state(ServerPlayer player, String key) {
         return Profiles.get(player).hasFlag(FLAG_STATE_PREFIX + key);
     }
 
-    private static boolean setState(ServerPlayer player, String key) {
+    static boolean setState(ServerPlayer player, String key) {
         boolean changed = Profiles.get(player).setFlag(FLAG_STATE_PREFIX + key);
         if (changed) {
             Profiles.sync(player);
@@ -178,43 +179,43 @@ public final class Doomsday {
     }
 
     /** What happens in memory only: timed beats, and the beats already started this session. */
-    private static final class Session {
+    static final class Session {
         final Map<String, Integer> timers = new HashMap<>();
         final Set<String> started = new HashSet<>();
         final Map<String, Integer> counters = new HashMap<>();
     }
 
-    private static final Map<UUID, Session> SESSIONS = new ConcurrentHashMap<>();
+    static final Map<UUID, Session> SESSIONS = new ConcurrentHashMap<>();
 
-    private static Session session(ServerPlayer player) {
+    static Session session(ServerPlayer player) {
         return SESSIONS.computeIfAbsent(player.getUUID(), u -> new Session());
     }
 
     /** Starts a beat once per session; returns false if it was already started. */
-    private static boolean once(ServerPlayer player, String beat) {
+    static boolean once(ServerPlayer player, String beat) {
         return session(player).started.add(beat);
     }
 
-    private static void after(ServerPlayer player, int ticks, String beat) {
+    static void after(ServerPlayer player, int ticks, String beat) {
         session(player).timers.put(beat, Math.max(1, ticks));
     }
 
-    private static boolean pending(ServerPlayer player, String beat) {
+    static boolean pending(ServerPlayer player, String beat) {
         return session(player).timers.containsKey(beat);
     }
 
     // ================================================================== current scene
 
-    private record Current(String quest, String step) {
+    record Current(String quest, String step) {
         boolean is(String q, String s) {
             return quest.equals(q) && step.equals(s);
         }
     }
 
-    private static final List<String> DOOMSDAY = List.of(S06, S07, S08, S09, S10, S11);
+    static final List<String> DOOMSDAY = List.of(S06, S07, S08, S09, S10, S11, S12, S13, S14, S15, S16);
 
     @Nullable
-    private static Current current(ServerPlayer player) {
+    static Current current(ServerPlayer player) {
         PlayerProgress p = Profiles.get(player);
         for (String id : DOOMSDAY) {
             if (p.isQuestActive(id)) {
@@ -228,29 +229,29 @@ public final class Doomsday {
         return null;
     }
 
-    private static boolean on(ServerPlayer player, String quest, String step) {
+    static boolean on(ServerPlayer player, String quest, String step) {
         return StoryService.isOnStep(player, quest, step);
     }
 
-    private static void progress(ServerPlayer player, String quest, String step) {
+    static void progress(ServerPlayer player, String quest, String step) {
         StoryService.progress(player, quest, step, 1);
     }
 
-    private static boolean in(ServerPlayer player, ResourceKey<Level> dim) {
+    static boolean in(ServerPlayer player, ResourceKey<Level> dim) {
         return player.level().dimension() == dim;
     }
 
-    private static boolean near(ServerPlayer player, ResourceKey<Level> dim, BlockPos pos, double dist) {
+    static boolean near(ServerPlayer player, ResourceKey<Level> dim, BlockPos pos, double dist) {
         return in(player, dim) && player.position().distanceTo(Vec3.atBottomCenterOf(pos)) <= dist;
     }
 
     /** Nothing on screen that a new conversation would interrupt. */
-    private static boolean idle(ServerPlayer player) {
+    static boolean idle(ServerPlayer player) {
         PlayerProgress p = Profiles.get(player);
         return p.pendingDialogue() == null && p.activeCinematic() == null && !p.inTransit();
     }
 
-    private static void target(ServerPlayer player, ResourceKey<Level> dim, BlockPos pos, double radius) {
+    static void target(ServerPlayer player, ResourceKey<Level> dim, BlockPos pos, double radius) {
         Current c = current(player);
         if (c == null) {
             return;
@@ -266,7 +267,7 @@ public final class Doomsday {
     }
 
     /** Where the player comes back after dying: the group checkpoint of the current beat. */
-    private static void checkpoint(ServerPlayer player, ResourceKey<Level> dim, BlockPos pos) {
+    static void checkpoint(ServerPlayer player, ResourceKey<Level> dim, BlockPos pos) {
         PlayerProgress p = Profiles.get(player);
         Location now = p.checkpoint();
         String d = dim.location().toString();
@@ -277,14 +278,14 @@ public final class Doomsday {
         Profiles.sync(player);
     }
 
-    private static void message(ServerPlayer player, String key) {
+    static void message(ServerPlayer player, String key) {
         player.displayClientMessage(Component.translatable(key), true);
     }
 
     // ================================================================== people
 
     /** Per-player tag, for the people this player escorts and the attackers in their way. */
-    private static String own(ServerPlayer player, String base) {
+    static String own(ServerPlayer player, String base) {
         return base + "_" + player.getUUID().toString().substring(0, 8);
     }
 
@@ -313,7 +314,7 @@ public final class Doomsday {
      * chunk is not entity-ticking (spawning then would make duplicates; setup runs again shortly).
      */
     @Nullable
-    private static StoryNpcEntity npc(ServerLevel level, String characterId, String tag, BlockPos pos, float yaw) {
+    static StoryNpcEntity npc(ServerLevel level, String characterId, String tag, BlockPos pos, float yaw) {
         if (!level.isPositionEntityTicking(pos)) {
             return null;
         }
@@ -329,7 +330,7 @@ public final class Doomsday {
 
     /** An NPC that stays at a post: put back if it wandered far, otherwise left alone. */
     @Nullable
-    private static StoryNpcEntity post(ServerLevel level, String characterId, String tag, BlockPos pos, float yaw, boolean ambient) {
+    static StoryNpcEntity post(ServerLevel level, String characterId, String tag, BlockPos pos, float yaw, boolean ambient) {
         StoryNpcEntity n = npc(level, characterId, tag, pos, yaw);
         if (n != null) {
             if (n.isAmbient() != ambient) {
@@ -343,7 +344,7 @@ public final class Doomsday {
     }
 
     /** Sends an NPC towards a spot: walks if it is near enough, otherwise appears there. */
-    private static void sendTo(@Nullable StoryNpcEntity n, BlockPos pos) {
+    static void sendTo(@Nullable StoryNpcEntity n, BlockPos pos) {
         if (n == null) {
             return;
         }
@@ -356,7 +357,7 @@ public final class Doomsday {
         }
     }
 
-    private static void removeAll(ServerLevel level, String tag, BlockPos around, double radius) {
+    static void removeAll(ServerLevel level, String tag, BlockPos around, double radius) {
         NpcSpawner.findStoryNpcs(level, tag, around, radius).forEach(StoryNpcEntity::discard);
     }
 
@@ -489,12 +490,11 @@ public final class Doomsday {
                     setupS11(player, ny, c.step);
                 }
             }
-            default -> {
-            }
+            default -> Responders.setup(player, c);
         }
     }
 
-    private static BlockPos t(BlockPos offset) {
+    static BlockPos t(BlockPos offset) {
         return MarvelSites.tva(offset);
     }
 
@@ -550,13 +550,13 @@ public final class Doomsday {
         }
     }
 
-    private static void alarm(ServerLevel level, BlockPos at) {
+    static void alarm(ServerLevel level, BlockPos at) {
         level.playSound(null, at, SoundEvents.BELL_BLOCK, SoundSource.BLOCKS, 2f, 0.6f);
         level.playSound(null, at, SoundEvents.NOTE_BLOCK_BASS.value(), SoundSource.BLOCKS, 2f, 0.5f);
     }
 
     /** Opens a conversation by itself after a short pause, once per session, when nothing else is on screen. */
-    private static void autoOpen(ServerPlayer player, String group, int ticks) {
+    static void autoOpen(ServerPlayer player, String group, int ticks) {
         if (once(player, "open:" + group)) {
             after(player, ticks, "open:" + group);
         }
@@ -696,7 +696,7 @@ public final class Doomsday {
     }
 
     /** Someone following Steve: keeps a few blocks behind him; brought back if they get lost or fall. */
-    private static void follow(ServerLevel level, ServerPlayer player, @Nullable StoryNpcEntity n, BlockPos lostReturn) {
+    static void follow(ServerLevel level, ServerPlayer player, @Nullable StoryNpcEntity n, BlockPos lostReturn) {
         if (n == null) {
             return;
         }
@@ -715,7 +715,7 @@ public final class Doomsday {
     }
 
     /** A safe spot just behind the player (for someone who fell behind or into the trench). */
-    private static final class Placementish {
+    static final class Placementish {
         static BlockPos nearPlayer(ServerLevel level, ServerPlayer player) {
             Vec3 back = player.position().subtract(player.getLookAngle().multiply(2, 0, 2));
             return com.worldsreborn.worlds.Placement.findSafe(level, BlockPos.containing(back), 4);
@@ -1095,7 +1095,7 @@ public final class Doomsday {
 
     // ---------------------------------------------------------------- Scene 11, The Missing Traveller
 
-    private static BlockPos n(BlockPos offset) {
+    static BlockPos n(BlockPos offset) {
         return MarvelSites.ny(offset);
     }
 
@@ -1427,13 +1427,12 @@ public final class Doomsday {
                     }
                 }
             }
-            default -> {
-            }
+            default -> Responders.fire(player, beat);
         }
     }
 
     /** Whether an automatic conversation still belongs to the player's current step. */
-    private static boolean stillWanted(ServerPlayer player, String group) {
+    static boolean stillWanted(ServerPlayer player, String group) {
         return switch (group) {
             case "d06_search" -> on(player, S06, S06_SEARCH);
             case "d06_crossing" -> on(player, S06, S06_CROSSING);
@@ -1454,7 +1453,7 @@ public final class Doomsday {
             case "d10_peter_ask", "d10_peter_watch" -> on(player, S10, S10_HANDOVER) && !state(player, "steve_message_blocked");
             case "d11_call" -> on(player, S11, S11_MEETING) && !state(player, "daredevil_called");
             case "d11_meeting" -> on(player, S11, S11_SHARE) && !state(player, "meeting_held");
-            default -> false;
+            default -> Responders.stillWanted(player, group);
         };
     }
 
@@ -1487,6 +1486,7 @@ public final class Doomsday {
         if (player.tickCount % 10 == 3 && current(player) != null) {
             setup(player);
         }
+        Responders.tick(player);
     }
 
     @SubscribeEvent
@@ -1504,18 +1504,25 @@ public final class Doomsday {
                 TravelService.beginTransit(player, DEST_TVA, null, 40);
             }
         }
-        // A Scene 11 save always comes back as Spider-Man; anything else as Steve.
+        // Saves from before Scenes 12-16 existed finished at Scene 11 with free travel as a stopgap: carry on to Scene 12.
+        if (p.isQuestCompleted(S11) && !p.isQuestStarted(S12)) {
+            p.clearFlag(WRTravel.FREE_TRAVEL_FLAG);
+            StoryService.start(player, S12);
+        }
+        // A Scene 11 save always comes back as Spider-Man, a Scene 12-16 save as that scene's hero; anything else as Steve.
         if (p.isQuestActive(S11) && !state(player, "perspective_peter")) {
             Perspective.becomePeter(player);
         } else if (!p.isQuestActive(S11) && state(player, "perspective_peter")) {
             Perspective.becomeSteve(player);
         }
+        Responders.onLogin(player);
         setup(player);
     }
 
     @SubscribeEvent
     public static void onLogout(PlayerEvent.PlayerLoggedOutEvent event) {
         SESSIONS.remove(event.getEntity().getUUID());
+        Responders.forget(event.getEntity().getUUID());
     }
 
     @SubscribeEvent
@@ -1531,12 +1538,13 @@ public final class Doomsday {
         if (c != null && c.quest.equals(S11)) {
             Perspective.restoreKit(player);
         }
+        Responders.onRespawn(player);
         setup(player);
     }
 
     @SubscribeEvent
     public static void onFall(LivingFallEvent event) {
-        if (event.getEntity() instanceof ServerPlayer player && state(player, "perspective_peter")) {
+        if (event.getEntity() instanceof ServerPlayer player && (state(player, "perspective_peter") || Responders.noFallDamage(player))) {
             event.setCanceled(true);
         }
     }
@@ -1549,7 +1557,9 @@ public final class Doomsday {
             return;
         }
         ServerLevel tva = player.server.getLevel(MarvelSites.TVA);
-        if (event.isQuestStart()) {
+        if (event.isQuestStart() && Responders.SCENES_12_16.contains(q)) {
+            Responders.onQuestStart(player, q);
+        } else if (event.isQuestStart()) {
             WRCore.LOGGER.info("[Worlds Reborn] {} started Marvel {}", player.getScoreboardName(), q);
             switch (q) {
                 case S06 -> {
@@ -1575,6 +1585,9 @@ public final class Doomsday {
         }
         if (event.getResult() == ProgressResult.QUEST_COMPLETED && q.equals(S11)) {
             finishMilestone(player);
+        }
+        if (event.getResult() == ProgressResult.QUEST_COMPLETED && q.equals(S16)) {
+            Responders.finishMilestone(player);
         }
         if (q.equals(S08) && S08_COVER.equals(event.getStepId()) && event.getResult() == ProgressResult.STEP_COMPLETED) {
             message(player, "message.wrmarvel.bridge_gap");
@@ -1603,6 +1616,10 @@ public final class Doomsday {
         String who = event.getCharacterId();
         Current c = current(player);
         if (c == null) {
+            return;
+        }
+        if (Responders.SCENES_12_16.contains(c.quest)) {
+            Responders.onNpcInteract(player, c, who, event.getNpc());
             return;
         }
         if (MOBIUS.equals(who)) {
@@ -1655,7 +1672,7 @@ public final class Doomsday {
     }
 
     /** Opens one of these scenes' conversations now (talking to someone), unless another is already showing. */
-    private static void open(ServerPlayer player, String group) {
+    static void open(ServerPlayer player, String group) {
         if (!stillWanted(player, group)) {
             return;
         }
@@ -1830,8 +1847,7 @@ public final class Doomsday {
                     message(player, "message.wrmarvel.share_recording");
                 }
             }
-            default -> {
-            }
+            default -> Responders.onDialogueFinished(player, group, choice);
         }
     }
 
@@ -1857,12 +1873,17 @@ public final class Doomsday {
         } else if (CIN_S11_WATCHING.equals(id) && on(player, S11, S11_SHARE)) {
             Perspective.becomeSteve(player);
             progress(player, S11, S11_SHARE);
+        } else {
+            Responders.onCinematicFinished(player, id);
         }
     }
 
     // ================================================================== blocks and items
 
     public static void onCrateMoved(ServerPlayer player, BlockPos pos) {
+        if (Responders.onDebrisUsed(player, pos)) {
+            return;
+        }
         ServerLevel level = player.serverLevel();
         boolean crate = level.getBlockState(pos).is(MarvelBlocks.FALLEN_CRATE.get());
         boolean allowed = crate ? on(player, S07, S07_ROUTE) && state(player, "tasks_given") : on(player, S09, S09_REFUGEES);
@@ -2023,7 +2044,7 @@ public final class Doomsday {
         return player.getInventory().contains(new ItemStack(item));
     }
 
-    private static boolean take(ServerPlayer player, Item item) {
+    static boolean take(ServerPlayer player, Item item) {
         var inv = player.getInventory();
         for (int i = 0; i < inv.getContainerSize(); i++) {
             if (inv.getItem(i).is(item)) {
@@ -2035,7 +2056,7 @@ public final class Doomsday {
     }
 
     /** Tops up a story tool to at least {@code count} (repair panels: the crew hands out more as needed). */
-    private static void ensureItems(ServerPlayer player, Item item, int count) {
+    static void ensureItems(ServerPlayer player, Item item, int count) {
         if (player.isCreative()) {
             return;
         }
@@ -2062,9 +2083,7 @@ public final class Doomsday {
     private static void finishMilestone(ServerPlayer player) {
         PlayerProgress p = Profiles.get(player);
         p.setFlag(FLAG_MILESTONE_2);
-        // Scene 12 is not built yet: free travel so nobody is stranded in the observatory.
-        p.setFlag(WRTravel.FREE_TRAVEL_FLAG);
-        StoryService.toast(player, "info", "toast.wrmarvel.milestone2.title", "toast.wrmarvel.milestone2.detail", "");
+        // Scene 12 follows straight on (the next quest starts by itself); the story moves to Sam Wilson.
         WRCore.LOGGER.info("[Worlds Reborn] {} finished Marvel Act 1 Scenes 6-11", player.getScoreboardName());
         Profiles.sync(player);
     }
@@ -2079,6 +2098,7 @@ public final class Doomsday {
         p.flags().removeIf(f -> f.startsWith(FLAG_STATE_PREFIX));
         p.flags().removeIf(f -> f.startsWith(FLAG_BARK_PREFIX + "b") || f.startsWith(FLAG_BARK_PREFIX + "d"));
         SESSIONS.remove(player.getUUID());
+        Responders.forget(player.getUUID());
         var server = player.server;
         ServerLevel tva = server.getLevel(MarvelSites.TVA);
         if (tva != null) {
@@ -2144,6 +2164,9 @@ public final class Doomsday {
                 p.setFlag(FLAG_STATE_PREFIX + "steve_message_blocked");
             }
         }
+        if (scene >= 12) {
+            Responders.prepareJump(player, scene);
+        }
         StoryService.start(player, DOOMSDAY.get(scene - 6));
         if (scene == 11) {
             Perspective.becomePeter(player);
@@ -2153,12 +2176,13 @@ public final class Doomsday {
 
     /** Used when jumping to an earlier scene: back to Steve, with his inventory, if playing as Spider-Man. */
     public static void leavePerspective(ServerPlayer player) {
-        if (Profiles.get(player).perspectiveSkin() != null || state(player, "perspective_peter")) {
+        if (Profiles.get(player).perspectiveSkin() != null || state(player, "perspective_peter")
+                || Responders.currentHero(player) != null) {
             Perspective.becomeSteve(player);
         }
     }
 
-    // ================================================================== playing as Spider-Man (Scene 11)
+    // ================================================================== playing as Spider-Man (Scene 11); heroes of 12-16 in Responders
 
     /**
      * The perspective switch to Spider-Man: Steve's inventory is put aside (saved with the world, so it survives a
@@ -2203,6 +2227,7 @@ public final class Doomsday {
             PlayerProgress p = Profiles.get(player);
             p.setPerspectiveSkin(null);
             p.clearFlag(FLAG_STATE_PREFIX + "perspective_peter");
+            Responders.clearHero(player);
             player.removeEffect(MobEffects.JUMP);
             player.removeEffect(MobEffects.MOVEMENT_SPEED);
             PerspectiveStash.restore(player);

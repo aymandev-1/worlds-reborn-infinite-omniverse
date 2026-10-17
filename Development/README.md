@@ -11,7 +11,7 @@ A Minecraft mod series. This folder builds **eight separate mods** (one jar each
 | Worlds Reborn: Abilities | `abilities` | `worldsreborn-abilities-…` | Ability unlocks, 3 slots (Z/X/C), cooldowns |
 | Worlds Reborn: Worlds | `worlds` | `worldsreborn-worlds-…` | Set-piece builder, site records, safe placement, spider-free rule |
 | Worlds Reborn: Travel | `travel` | `worldsreborn-travel-…` | Destinations, portals, transit, arrival, checkpoints |
-| Worlds Reborn: Marvel | `marvel` | `worldsreborn-marvel-…` | Marvel campaign. This build: Act 1, Scenes 1–11 |
+| Worlds Reborn: Marvel | `marvel` | `worldsreborn-marvel-…` | Marvel campaign. This build: Act 1, Scenes 1–16 |
 
 Marvel needs all the others. The other seven don't need Marvel.
 
@@ -38,7 +38,7 @@ gradlew :marvel:runClient
 
 ## Developer commands (need cheats / op)
 
-- `/wr marvel scene <1-11>` jump to the start of a scene
+- `/wr marvel scene <1-16>` jump to the start of a scene
 - `/wr marvel restart` start Scene 1 again
 - `/wr story status` show your quest state
 - `/wr profile show` / `/wr profile reset` show or wipe your Worlds Reborn save

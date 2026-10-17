@@ -76,8 +76,43 @@ public final class MarvelIds {
     public static final String S11_MEETING = "s11_meeting_reached";
     public static final String S11_SHARE = "s11_complete";
 
+    // Act 1 "Doomsday", Scenes 12-16 (authored ids WR1_012..WR1_016): Earth's heroes respond. Same convention: each step
+    // is named after the approved checkpoint it reaches when completed.
+    public static final String S12 = NS + "wr1_012";
+    public static final String S12_RESPONSE = "s12_response_started";
+    public static final String S12_SURVEY = "s12_survey_recorded";
+    public static final String S12_PASSENGERS = "s12_passengers_safe";
+    public static final String S12_DONE = "s12_complete";
+
+    public static final String S13 = NS + "wr1_013";
+    public static final String S13_ENTRY = "s13_entry_started";
+    public static final String S13_FIRST_GROUP = "s13_first_group_safe";
+    public static final String S13_STAFF = "s13_staff_evacuated";
+    public static final String S13_RECORDER = "s13_recorder_recovered";
+    public static final String S13_DONE = "s13_complete";
+
+    public static final String S14 = NS + "wr1_014";
+    public static final String S14_PLAN = "s14_joint_plan_agreed";
+    public static final String S14_ARRAY = "s14_array_ready";
+    public static final String S14_DONE = "s14_complete";
+
+    public static final String S15 = NS + "wr1_015";
+    public static final String S15_TEAM = "s15_team_deployed";
+    public static final String S15_LAB = "s15_lab_secured";
+    public static final String S15_SENSORS = "s15_sensors_online";
+    public static final String S15_ASSEMBLY = "s15_assembly_stable";
+    public static final String S15_DONE = "s15_complete";
+
+    public static final String S16 = NS + "wr1_016";
+    public static final String S16_BRIEFING = "s16_briefing_complete";
+    public static final String S16_ACCESS = "s16_access_opened";
+    public static final String S16_STAFF = "s16_staff_safe";
+    public static final String S16_DATA = "s16_data_recovered";
+    public static final String S16_DONE = "s16_complete";
+
     /** Scene order. The first active quest in this list is the player's current scene. */
-    public static final List<String> SCENES = List.of(S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11);
+    public static final List<String> SCENES = List.of(S01, S02, S03, S04, S05, S06, S07, S08, S09, S10, S11, S12, S13, S14,
+            S15, S16);
 
     // Dialogues
     public static final String D01_CARTOGRAPHER = NS + "d01_cartographer";
@@ -192,7 +227,25 @@ public final class MarvelIds {
     public static final String FLAG_S04_DOOR = NS + "s04_door_open";
     /** Player flag set when Scene 11 is finished. */
     public static final String FLAG_MILESTONE_2 = NS + "milestone_scenes_6_11";
-    /** Prefix of the per-beat checkpoint and state flags of Scenes 6-11 (see Doomsday). */
+    /** Player flag set when Scene 16 is finished. */
+    public static final String FLAG_MILESTONE_3 = NS + "milestone_scenes_12_16";
+    public static final String LAYOUT_RESPONSE_BASE = NS + "layout_response_base_v1";
+    public static final String LAYOUT_FACILITY = NS + "layout_research_facility_v1";
+    public static final String LAYOUT_FF_LAB = NS + "layout_ff_lab_v1";
+    public static final String LAYOUT_XMEN = NS + "layout_xmen_v1";
+
+    // Cinematics of Scenes 12-16: a title card as the story moves to each scene's hero and place.
+    public static final String CIN_S12_TITLE = NS + "s12_title";
+    public static final String CIN_S13_TITLE = NS + "s13_title";
+    public static final String CIN_S14_TITLE = NS + "s14_title";
+    public static final String CIN_S15_TITLE = NS + "s15_title";
+    public static final String CIN_S16_TITLE = NS + "s16_title";
+    public static final String CIN_S16_STATION = NS + "s16_to_station";
+    public static final String CIN_S16_RETURN = NS + "s16_return_school";
+    public static final int CIN_TITLE_TICKS = 110;
+    public static final int CIN_S16_TRAVEL_TICKS = 70;
+
+    /** Prefix of the per-beat checkpoint and state flags of Scenes 6-16 (see Doomsday and Responders). */
     public static final String FLAG_STATE_PREFIX = NS + "wr1/";
     /** Reward id for the cartographer's two surveys. */
     public static final String REWARD_SURVEYS = NS + "surveys";

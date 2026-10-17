@@ -4,7 +4,7 @@
 
 **WORLDS REBORN: INFINITE OMNIVERSE** is an ambitious, modular Minecraft project built around an expanding narrative: begin with a mystery in a quiet village, cross into Marvel's universe, uncover an impossible origin, and eventually follow the trail across an entire omniverse.
 
-The project is being developed as eight cooperating NeoForge mods rather than one monolithic jar. That structure keeps shared systems reusable while allowing each campaign and universe to grow independently. The current playable foundation is the opening Marvel campaign milestone: **Act 1, Scenes 1-11** are implemented and compiled, with full start-to-finish playtesting still in progress.
+The project is being developed as eight cooperating NeoForge mods rather than one monolithic jar. That structure keeps shared systems reusable while allowing each campaign and universe to grow independently. The current playable foundation is the opening Marvel campaign milestone: **Act 1, Scenes 1-16** are implemented and compiled, with full start-to-finish playtesting still in progress.
 
 ## Repository description
 
@@ -19,9 +19,9 @@ The project is being developed as eight cooperating NeoForge mods rather than on
 | Java target | Java 21 |
 | Build system | Gradle wrapper 8.14.3 |
 | Architecture | Eight cooperating modules, one jar per module |
-| Current milestone | Marvel Act 1, Scenes 1-11 |
-| Implementation state | Scenes 1-11 are implemented and compiled |
-| Playthrough state | Scenes 1-11 have not yet been played from start to finish |
+| Current milestone | Marvel Act 1, Scenes 1-16 |
+| Implementation state | Scenes 1-16 are implemented and compiled |
+| Playthrough state | Scenes 1-16 have not yet been played from start to finish |
 
 The latest project status, known issues, placeholders, and testing notes are maintained in [`Development/STATUS.md`](Development/STATUS.md).
 
@@ -38,7 +38,7 @@ The latest project status, known issues, placeholders, and testing notes are mai
 | `abilities` | Ability unlocks, three ability slots (`Z`/`X`/`C`), and cooldowns |
 | `worlds` | Set-piece building, site records, safe placement, and the spider-free rule |
 | `travel` | Destinations, portals, transit, arrivals, and checkpoints |
-| `marvel` | The first campaign, including Marvel Act 1 Scenes 1-11 |
+| `marvel` | The first campaign, including Marvel Act 1 Scenes 1-16 |
 
 ### Marvel Act 1: Scenes 1-5
 
@@ -57,7 +57,17 @@ The latest project status, known issues, placeholders, and testing notes are mai
 10. **Sanctuary of the Watchers** - Uatu shelters Steve and he watches the TVA fall.
 11. **The Missing Traveller** - Play as Spider-Man: scan the alley, rescue accident victims, record another Earth in the sky and meet the Defenders.
 
-Free travel is temporarily enabled at the end of Scene 11 so players are not stranded while Scene 12 is in development.
+### Marvel Act 1 "Doomsday": Scenes 12-16
+
+Each scene hands the story to a different hero, with their own powers on the ability keys:
+
+12. **A World on Alert** - Sam Wilson flies a survey over New York, rescues a helicopter's passengers, and Shuri confirms the other Earth is inhabited.
+13. **Another Response** - Bucky Barnes, the New Avengers, Clint and Kate evacuate a damaged research facility and recover its recorder.
+14. **First Contact** - Sam brings the responders together, readies the communications array and reaches Reed Richards.
+15. **Across the Divide** - Sue Storm shields the Fantastic Four's lab with force fields while the channel is restored, and Reed finds more than two universes affected.
+16. **The Other Side** - Cyclops and the X-Men rescue a monitoring station's staff with controlled optic blasts and find an overlap near Xavier's school.
+
+Free travel is temporarily enabled at the end of Scene 16 so players are not stranded while Scene 17 is in development.
 
 ## Planned features and future scope
 
@@ -81,7 +91,7 @@ The planned narrative is designed to expand from a focused first campaign into a
 
 | Order | Campaign / story phase | Status | Scope |
 | ---: | --- | --- | --- |
-| 1 | **Marvel** | **Implemented milestone** | Act 1, Scenes 1-11 are implemented and compiled; Scenes 12-160 are planned |
+| 1 | **Marvel** | **Implemented milestone** | Act 1, Scenes 1-16 are implemented and compiled; Scenes 17-160 are planned |
 | 2 | **DC** | Planned | Future franchise campaign |
 | 3 | **Ben 10** | Planned | Future franchise campaign |
 | 4 | **Video Games** | Planned | Future franchise campaign |
@@ -155,12 +165,12 @@ This repository does not currently publish a packaged download link.
 
 ## Active development
 
-The active priority is to compile and fix the current build on the development machine, play Marvel Act 1 Scenes 1-11 from start to finish, and then move into Scenes 12-16 once their approved scripts are added. The full roadmap is in [`docs/MASTER_PLAN.md`](docs/MASTER_PLAN.md) and the 160-scene Marvel outline (with approved vs proposed scenes marked) is in [`docs/story/MARVEL_CAMPAIGN_OUTLINE.md`](docs/story/MARVEL_CAMPAIGN_OUTLINE.md).
+The active priority is to compile and fix the current build on the development machine, play Marvel Act 1 Scenes 1-16 from start to finish, and then move into Scene 17 once its script is approved. The full roadmap is in [`docs/MASTER_PLAN.md`](docs/MASTER_PLAN.md) and the 160-scene Marvel outline (with approved vs proposed scenes marked) is in [`docs/story/MARVEL_CAMPAIGN_OUTLINE.md`](docs/story/MARVEL_CAMPAIGN_OUTLINE.md).
 
 Known development considerations include:
 
 - The first join builds the village and ruins together, which can cause a short pause.
-- Free travel at the end of Scene 11 is temporary.
+- Free travel at the end of Scene 16 is temporary.
 - Multiplayer scenes are per-player, while shared NPC behavior is not yet coordinated between players on different story steps.
 - Most dialogue and several information read-outs remain one-line placeholders marked for replacement.
 
@@ -171,7 +181,7 @@ For the detailed implementation inventory and test history, see [`Development/ST
 When cheats or operator permissions are available in-game, the current development commands include:
 
 ```text
-/wr marvel scene <1-11>
+/wr marvel scene <1-16>
 /wr marvel restart
 /wr story status
 /wr profile show

@@ -6,7 +6,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.neoforged.neoforge.event.RegisterCommandsEvent;
 
-/** /wr marvel scene &lt;1-11&gt; jumps to the start of a scene for testing; /wr marvel restart starts Scene 1 again. */
+/** /wr marvel scene &lt;1-16&gt; jumps to the start of a scene for testing; /wr marvel restart starts Scene 1 again. */
 public final class MarvelCommands {
     private MarvelCommands() {
     }
@@ -14,7 +14,7 @@ public final class MarvelCommands {
     public static void register(RegisterCommandsEvent event) {
         event.getDispatcher().register(Commands.literal("wr").requires(s -> s.hasPermission(2))
                 .then(Commands.literal("marvel")
-                        .then(Commands.literal("scene").then(Commands.argument("number", IntegerArgumentType.integer(1, 11))
+                        .then(Commands.literal("scene").then(Commands.argument("number", IntegerArgumentType.integer(1, 16))
                                 .executes(c -> {
                                     ServerPlayer player = c.getSource().getPlayerOrException();
                                     int n = IntegerArgumentType.getInteger(c, "number");

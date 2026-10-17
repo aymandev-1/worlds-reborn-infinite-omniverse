@@ -65,6 +65,17 @@ public final class MarvelBlocks {
             () -> new com.worldsreborn.marvel.doomsday.WebAnchorBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).noLootTable()
                     .strength(-1f, 3_600_000f).sound(SoundType.METAL).noOcclusion()));
 
+    // ---- Act 1 Scenes 12-16
+    public static final DeferredBlock<com.worldsreborn.marvel.doomsday.StoryControlBlock> STORY_CONTROL = BLOCKS.register("story_control",
+            () -> new com.worldsreborn.marvel.doomsday.StoryControlBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).noLootTable()
+                    .strength(-1f, 3_600_000f).lightLevel(s -> 7).sound(SoundType.METAL)));
+    /** Sue Storm's force field: solid, see-through, faintly lit, placed and released only by her ability. */
+    public static final DeferredBlock<com.worldsreborn.marvel.doomsday.ForceFieldBlock> FORCE_FIELD = BLOCKS.register("force_field",
+            () -> new com.worldsreborn.marvel.doomsday.ForceFieldBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_BLUE).noLootTable()
+                    .strength(-1f, 3_600_000f).lightLevel(s -> 6).sound(SoundType.AMETHYST).noOcclusion()
+                    .isValidSpawn((s, l, p, e) -> false).isRedstoneConductor((s, l, p) -> false)
+                    .isSuffocating((s, l, p) -> false).isViewBlocking((s, l, p) -> false)));
+
     private MarvelBlocks() {
     }
 }
