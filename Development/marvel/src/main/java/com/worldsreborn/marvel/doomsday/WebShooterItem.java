@@ -77,6 +77,11 @@ public class WebShooterItem extends Item {
             Doomsday.onWebAnchor(sp, hit);
             return InteractionResultHolder.success(stack);
         }
+        // Rescue interactions should work by aiming at the car itself, rather than
+        // demanding that players discover three hidden technical anchor blocks.
+        if (Doomsday.tryWebAccidentCar(sp, hit)) {
+            return InteractionResultHolder.success(stack);
+        }
         // Zip towards the point.
         Vec3 to = block.getLocation().subtract(player.position());
         double dist = to.length();

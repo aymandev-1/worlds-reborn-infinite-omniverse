@@ -144,7 +144,12 @@ public final class MarvelStory {
             if (ny == null) {
                 return;
             }
-            target(player, MarvelSites.NEW_YORK, MarvelSites.ny(MarvelSites.NY_SHOP_DOOR), 4);
+            // Track the actor the player actually needs, rather than leaving the
+            // objective marker on the shop door after the fight is over.
+            BlockPos scene3Target = step.equals(S03_MEET_SPIDERMAN)
+                    ? MarvelSites.ny(MarvelSites.NY_SPIDERMAN_DROP)
+                    : MarvelSites.ny(MarvelSites.NY_SHOP_DOOR);
+            target(player, MarvelSites.NEW_YORK, scene3Target, step.equals(S03_MEET_SPIDERMAN) ? 3 : 4);
             if (near(player, MarvelSites.NEW_YORK, MarvelSites.ny(MarvelSites.NY_SHOP_DOOR))) {
                 MarvelSites.ensureNewYork(ny);
                 MarvelSites.placeTrace(ny);
@@ -172,7 +177,10 @@ public final class MarvelStory {
                 return;
             }
             BlockPos trace = MarvelSites.ny(MarvelSites.NY_ROOF_TRACE);
-            target(player, MarvelSites.NEW_YORK, step.equals(S04_BACK_TO_TRACE) ? trace : MarvelSites.ny(MarvelSites.NY_ROOF_SPIDEY), 3);
+            // Scanning and revisiting the anomaly target the trace itself;
+            // conversation beats target Peter, avoiding misleading HUD markers.
+            boolean needsTrace = step.equals(S04_BACK_TO_TRACE) || step.equals(S04_SCAN_TRACE);
+            target(player, MarvelSites.NEW_YORK, needsTrace ? trace : MarvelSites.ny(MarvelSites.NY_ROOF_SPIDEY), 3);
             if (near(player, MarvelSites.NEW_YORK, trace)) {
                 MarvelSites.ensureRooftop(ny);
                 ensureCustomers(ny, false);
