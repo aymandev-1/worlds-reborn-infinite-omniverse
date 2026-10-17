@@ -1915,6 +1915,36 @@ public final class Doomsday {
         return true;
     }
 
+    /**
+     * Scene 11: directly webbing the crashed vehicle secures the next car tether.
+     * The original physical anchor blocks remain usable for compatibility with
+     * existing worlds and partially completed rescue progress.
+     */
+    public static boolean tryWebAccidentCar(ServerPlayer player, BlockPos hit) {
+        if (!on(player, S11, S11_ACCIDENT)
+                || !player.serverLevel().dimension().equals(MarvelSites.NEW_YORK)) {
+            return false;
+        }
+        BlockPos car = n(DoomsdaySites.ACCIDENT);
+        // Restrict this shortcut to the actual vehicle rather than all nearby streets.
+        if (hit.getX() < car.getX() - 3 || hit.getX() > car.getX() + 3
+                || hit.getZ() < car.getZ() + 4 || hit.getZ() > car.getZ() + 6
+                || hit.getY() < car.getY() || hit.getY() > car.getY() + 2) {
+            return false;
+        }
+        ServerLevel ny = player.serverLevel();
+        for (BlockPos rel : DoomsdaySites.CAR_ANCHORS) {
+            BlockPos anchor = n(rel);
+            BlockState state = ny.getBlockState(anchor);
+            if (state.is(MarvelBlocks.WEB_ANCHOR.get()) && !state.getValue(WebAnchorBlock.WEBBED)) {
+                onWebAnchor(player, anchor);
+                return true;
+            }
+        }
+        // The car remains a valid target once it has been secured; don't zip into it.
+        return true;
+    }
+
     public static void onWebAnchor(ServerPlayer player, BlockPos pos) {
         ServerLevel ny = player.serverLevel();
         BlockState st = ny.getBlockState(pos);
@@ -1925,6 +1955,12 @@ public final class Doomsday {
         ny.playSound(null, pos, SoundEvents.WOOL_PLACE, SoundSource.PLAYERS, 1f, 1.4f);
         BlockPos rel = pos.subtract(MarvelSites.NY_ORIGIN);
         if (DoomsdaySites.CAR_ANCHORS.contains(rel)) {
+            long attached = DoomsdaySites.CAR_ANCHORS.stream()
+                    .filter(a -> {
+                        BlockState state = ny.getBlockState(n(a));
+                        return state.is(MarvelBlocks.WEB_ANCHOR.get()) && state.getValue(WebAnchorBlock.WEBBED);
+                    }).count();
+            player.displayClientMessage(Component.literal("Car webs attached: " + attached + "/3"), true);
             bark(player, "b11_car");
             if (DoomsdaySites.allWebbed(ny, DoomsdaySites.CAR_ANCHORS)) {
                 ny.playSound(null, n(DoomsdaySites.ACCIDENT).offset(0, 0, 5), SoundEvents.CHAIN_PLACE, SoundSource.BLOCKS, 1.2f, 0.7f);
