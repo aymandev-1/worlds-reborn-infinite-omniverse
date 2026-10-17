@@ -4,7 +4,7 @@
 
 **WORLDS REBORN: INFINITE OMNIVERSE** is an ambitious, modular Minecraft project built around an expanding narrative: begin with a mystery in a quiet village, cross into Marvel's universe, uncover an impossible origin, and eventually follow the trail across an entire omniverse.
 
-The project is being developed as eight cooperating NeoForge mods rather than one monolithic jar. That structure keeps shared systems reusable while allowing each campaign and universe to grow independently. The current playable foundation is the opening Marvel campaign milestone: **Act 1, Scenes 1-5** are implemented and compiled, with full start-to-finish playtesting still in progress.
+The project is being developed as eight cooperating NeoForge mods rather than one monolithic jar. That structure keeps shared systems reusable while allowing each campaign and universe to grow independently. The current playable foundation is the opening Marvel campaign milestone: **Act 1, Scenes 1-11** are implemented and compiled, with full start-to-finish playtesting still in progress.
 
 ## Repository description
 
@@ -19,9 +19,9 @@ The project is being developed as eight cooperating NeoForge mods rather than on
 | Java target | Java 21 |
 | Build system | Gradle wrapper 8.14.3 |
 | Architecture | Eight cooperating modules, one jar per module |
-| Current milestone | Marvel Act 1, Scenes 1-5 |
-| Implementation state | Scenes 1-5 are implemented and compiled |
-| Playthrough state | Scenes 1-5 have not yet been played from start to finish |
+| Current milestone | Marvel Act 1, Scenes 1-11 |
+| Implementation state | Scenes 1-11 are implemented and compiled |
+| Playthrough state | Scenes 1-11 have not yet been played from start to finish |
 
 The latest project status, known issues, placeholders, and testing notes are maintained in [`Development/STATUS.md`](Development/STATUS.md).
 
@@ -38,7 +38,7 @@ The latest project status, known issues, placeholders, and testing notes are mai
 | `abilities` | Ability unlocks, three ability slots (`Z`/`X`/`C`), and cooldowns |
 | `worlds` | Set-piece building, site records, safe placement, and the spider-free rule |
 | `travel` | Destinations, portals, transit, arrivals, and checkpoints |
-| `marvel` | The first campaign, including Marvel Act 1 Scenes 1-5 |
+| `marvel` | The first campaign, including Marvel Act 1 Scenes 1-11 |
 
 ### Marvel Act 1: Scenes 1-5
 
@@ -48,7 +48,16 @@ The latest project status, known issues, placeholders, and testing notes are mai
 4. **The Fading Trace** - Peter is escorted to an alley where a scanner reveals a trace before an emergency pulls him away.
 5. **An Unrecorded Traveller** - Mobius arrives, an orange time-door leads to the TVA, and a records terminal reports `ORIGIN UNIVERSE: UNREGISTERED`.
 
-This milestone ends with a **To be continued** banner. Free travel is temporarily enabled at the end of Scene 5 so players are not trapped in the TVA during development.
+### Marvel Act 1 "Doomsday": Scenes 6-11
+
+6. **Beyond the Records** - Mobius questions Steve, the Hooded Traveller is spotted in arrival footage, and an incursion evacuation fails.
+7. **Those Who Escaped** - Steve helps TVA refugees: clears a route, delivers supplies and reunites a family.
+8. **The Breach** - Attackers hit the TVA; Steve builds cover and escorts refugees while Mobius is separated.
+9. **The Last Door** - The refugees reach safety, Steve's gateway fails, and an unknown doorway carries him away.
+10. **Sanctuary of the Watchers** - Uatu shelters Steve and he watches the TVA fall.
+11. **The Missing Traveller** - Play as Spider-Man: scan the alley, rescue accident victims, record another Earth in the sky and meet the Defenders.
+
+Free travel is temporarily enabled at the end of Scene 11 so players are not stranded while Scene 12 is in development.
 
 ## Planned features and future scope
 
@@ -72,7 +81,7 @@ The planned narrative is designed to expand from a focused first campaign into a
 
 | Order | Campaign / story phase | Status | Scope |
 | ---: | --- | --- | --- |
-| 1 | **Marvel** | **Implemented milestone** | Act 1, Scenes 1-5 are implemented and compiled; Scenes 6-160 are planned |
+| 1 | **Marvel** | **Implemented milestone** | Act 1, Scenes 1-11 are implemented and compiled; Scenes 12-160 are planned |
 | 2 | **DC** | Planned | Future franchise campaign |
 | 3 | **Ben 10** | Planned | Future franchise campaign |
 | 4 | **Video Games** | Planned | Future franchise campaign |
@@ -146,12 +155,12 @@ This repository does not currently publish a packaged download link.
 
 ## Active development
 
-The active priority is to compile and fix the current build on the development machine, play Marvel Act 1 Scenes 1-5 from start to finish, and then move into Scenes 6-10 once their scripts are approved.
+The active priority is to compile and fix the current build on the development machine, play Marvel Act 1 Scenes 1-11 from start to finish, and then move into Scenes 12-16 once their approved scripts are added. The full roadmap is in [`docs/MASTER_PLAN.md`](docs/MASTER_PLAN.md) and the 160-scene Marvel outline (with approved vs proposed scenes marked) is in [`docs/story/MARVEL_CAMPAIGN_OUTLINE.md`](docs/story/MARVEL_CAMPAIGN_OUTLINE.md).
 
 Known development considerations include:
 
 - The first join builds the village and ruins together, which can cause a short pause.
-- Free travel at the end of Scene 5 is temporary.
+- Free travel at the end of Scene 11 is temporary.
 - Multiplayer scenes are per-player, while shared NPC behavior is not yet coordinated between players on different story steps.
 - Most dialogue and several information read-outs remain one-line placeholders marked for replacement.
 
@@ -162,7 +171,7 @@ For the detailed implementation inventory and test history, see [`Development/ST
 When cheats or operator permissions are available in-game, the current development commands include:
 
 ```text
-/wr marvel scene <1-5>
+/wr marvel scene <1-11>
 /wr marvel restart
 /wr story status
 /wr profile show

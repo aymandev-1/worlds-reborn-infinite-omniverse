@@ -18,6 +18,8 @@
 
 # Generated archives and packaged mod outputs
 *.jar
+# ...except the Gradle wrapper, without which a fresh clone cannot build
+!Development/gradle/wrapper/gradle-wrapper.jar
 *.zip
 
 # Operating-system metadata
